@@ -3,7 +3,7 @@
 ========================================================================
   REFUGIOS A* - Script Standalone
   Encuentra el refugio (escuela) más cercano usando el algoritmo A*
-  Colonia Renacimiento, Acapulco, Guerrero
+  Colonia Ciudad Renacimiento, Acapulco, Guerrero (CP 39715)
   
   INSTRUCCIONES PARA COMPAÑEROS:
   1. Instalar dependencias: pip install networkx matplotlib
