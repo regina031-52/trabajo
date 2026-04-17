@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 import networkx as nx
 import heapq
-from math import sqrt
+from math import sqrt, atan2, degrees
 import unicodedata
 
 ROOT_DIR = Path(__file__).parent
@@ -68,18 +68,31 @@ class Arista(BaseModel):
 class RutaRequest(BaseModel):
     nodo_origen: str
 
+class NodoCercanoRequest(BaseModel):
+    lat: float
+    lon: float
+
+class PasoInstruccion(BaseModel):
+    paso: int
+    instruccion: str
+    calle: str
+    distancia_m: float
+    acumulado_m: float
+
 class RutaResult(BaseModel):
     escuela: Escuela
     distancia_total: float
     tiempo_minutos: float
     ruta_nodos: List[str]
     ruta_coordenadas: List[dict]
+    instrucciones: List[PasoInstruccion] = []
 
 class RutaResponse(BaseModel):
     exito: bool
     mensaje: str
     mejor_ruta: Optional[RutaResult] = None
     todas_rutas: List[RutaResult] = []
+    sugerencias_emergencia: List[str] = []
 
 # ============ DATOS GLOBALES ============
 
@@ -249,32 +262,156 @@ async def get_grafo_stats():
         "conectado": nx.is_connected(G)
     }
 
+def get_bearing(lat1, lon1, lat2, lon2):
+    """Calcula el ángulo de dirección entre dos puntos (en grados, 0=norte)."""
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    angle = degrees(atan2(dlon, dlat))
+    return angle % 360
+
+def get_turn_direction(bearing_prev, bearing_next):
+    """Determina la dirección del giro entre dos segmentos."""
+    diff = (bearing_next - bearing_prev + 360) % 360
+    if diff < 30 or diff > 330:
+        return "Continua recto"
+    elif 30 <= diff < 150:
+        return "Gira a la derecha"
+    elif 150 <= diff <= 210:
+        return "Da vuelta"
+    else:
+        return "Gira a la izquierda"
+
+def generate_instructions(ruta_nodos, G, nodos_dict):
+    """
+    Genera instrucciones paso a paso para la ruta.
+    Agrupa segmentos de la misma calle en un solo paso.
+    """
+    if len(ruta_nodos) < 2:
+        return []
+
+    instrucciones = []
+    acumulado = 0
+    paso_num = 0
+
+    # Recorrer pares de nodos en la ruta
+    calle_actual = None
+    dist_calle = 0
+    paso_inicio_idx = 0
+
+    for i in range(len(ruta_nodos) - 1):
+        n1 = ruta_nodos[i]
+        n2 = ruta_nodos[i + 1]
+        edge = G.get_edge_data(n1, n2)
+        if not edge:
+            continue
+
+        nombre_calle = edge.get("nombre", "Sin nombre")
+        dist_seg = edge.get("weight", 0)
+
+        if calle_actual is None:
+            # Primer segmento
+            calle_actual = nombre_calle
+            dist_calle = dist_seg
+            paso_inicio_idx = i
+        elif nombre_calle == calle_actual:
+            # Misma calle, acumular distancia
+            dist_calle += dist_seg
+        else:
+            # Cambio de calle: generar instrucción del tramo anterior
+            paso_num += 1
+            acumulado += dist_calle
+
+            # Calcular giro si hay suficientes puntos
+            if i >= 2:
+                p0 = nodos_dict[ruta_nodos[i - 2]]
+                p1 = nodos_dict[ruta_nodos[i - 1]]
+                p2 = nodos_dict[ruta_nodos[i]]
+                bearing_prev = get_bearing(p0["lat"], p0["lon"], p1["lat"], p1["lon"])
+                bearing_next = get_bearing(p1["lat"], p1["lon"], p2["lat"], p2["lon"])
+                giro = get_turn_direction(bearing_prev, bearing_next)
+            else:
+                giro = "Camina por"
+
+            if paso_num == 1:
+                texto = f"Sal caminando por {calle_actual} ({round(dist_calle)} m)"
+            else:
+                texto = f"{giro} hacia {nombre_calle} (recorriste {round(dist_calle)} m por {calle_actual})"
+
+            instrucciones.append(PasoInstruccion(
+                paso=paso_num,
+                instruccion=texto,
+                calle=calle_actual,
+                distancia_m=round(dist_calle, 1),
+                acumulado_m=round(acumulado, 1)
+            ))
+
+            calle_actual = nombre_calle
+            dist_calle = dist_seg
+            paso_inicio_idx = i
+
+    # Último tramo
+    if calle_actual and dist_calle > 0:
+        paso_num += 1
+        acumulado += dist_calle
+        instrucciones.append(PasoInstruccion(
+            paso=paso_num,
+            instruccion=f"Continua por {calle_actual} hasta llegar al refugio ({round(dist_calle)} m)",
+            calle=calle_actual,
+            distancia_m=round(dist_calle, 1),
+            acumulado_m=round(acumulado, 1)
+        ))
+
+    # Paso final
+    paso_num += 1
+    instrucciones.append(PasoInstruccion(
+        paso=paso_num,
+        instruccion="Has llegado al refugio",
+        calle="Destino",
+        distancia_m=0,
+        acumulado_m=round(acumulado, 1)
+    ))
+
+    return instrucciones
+
+SUGERENCIAS_EMERGENCIA = [
+    "Agua embotellada (al menos 3 litros por persona)",
+    "Documentos importantes en bolsa impermeable (INE, CURP, actas)",
+    "Botiquin de primeros auxilios",
+    "Linterna con pilas extra",
+    "Radio portatil de pilas",
+    "Alimentos no perecederos (enlatados, barras, galletas)",
+    "Medicamentos personales (si aplica)",
+    "Ropa extra y cobija ligera",
+    "Cargador portatil para celular",
+    "Silbato de emergencia",
+    "Dinero en efectivo (billetes y monedas)",
+    "Copia de llaves de casa",
+    "Articulos de higiene basicos (papel, jabon, gel antibacterial)",
+    "Mascarilla o cubrebocas",
+    "Bolsas de plastico (para proteger documentos)"
+]
+
 @api_router.post("/calcular-ruta", response_model=RutaResponse)
 async def calcular_ruta(request: RutaRequest):
     """
     Calcula la ruta más corta desde el nodo origen a todas las escuelas
-    usando el algoritmo A*, y retorna la escuela más cercana.
+    usando el algoritmo A*, y retorna la escuela más cercana con instrucciones.
     """
     data = load_data()
     G = data["grafo"]
     escuelas = data["escuelas"]
     nodos_dict = {n["id"]: n for n in data["nodos"]}
-    
-    # Validar nodo origen
+
     if request.nodo_origen not in G:
         raise HTTPException(status_code=400, detail=f"Nodo origen '{request.nodo_origen}' no existe en el grafo")
-    
-    # Calcular ruta a cada escuela
+
     todas_rutas = []
-    
+
     for escuela in escuelas:
         nodo_destino = escuela["nodo_id"]
-        
-        # Ejecutar A*
         ruta, distancia = astar_path(G, request.nodo_origen, nodo_destino)
-        
+
         if ruta:
-            # Obtener coordenadas de la ruta
             ruta_coords = []
             for nodo_id in ruta:
                 if nodo_id in nodos_dict:
@@ -284,35 +421,70 @@ async def calcular_ruta(request: RutaRequest):
                         "lat": nodo["lat"],
                         "lon": nodo["lon"]
                     })
-            
-            # Calcular tiempo estimado (velocidad promedio caminando: 5 km/h = 83.33 m/min)
+
             tiempo_min = distancia / 83.33
-            
+            instrucciones = generate_instructions(ruta, G, nodos_dict)
+
             todas_rutas.append(RutaResult(
                 escuela=Escuela(**escuela),
                 distancia_total=round(distancia, 2),
                 tiempo_minutos=round(tiempo_min, 1),
                 ruta_nodos=ruta,
-                ruta_coordenadas=ruta_coords
+                ruta_coordenadas=ruta_coords,
+                instrucciones=instrucciones
             ))
-    
+
     if not todas_rutas:
         return RutaResponse(
             exito=False,
-            mensaje="No se encontró ruta a ninguna escuela",
+            mensaje="No se encontro ruta a ninguna escuela",
             todas_rutas=[]
         )
-    
-    # Ordenar por distancia y obtener la mejor
+
     todas_rutas.sort(key=lambda r: r.distancia_total)
     mejor_ruta = todas_rutas[0]
-    
+
     return RutaResponse(
         exito=True,
-        mensaje=f"Refugio más cercano: {mejor_ruta.escuela.nombre}",
+        mensaje=f"Refugio mas cercano: {mejor_ruta.escuela.nombre}",
         mejor_ruta=mejor_ruta,
-        todas_rutas=todas_rutas
+        todas_rutas=todas_rutas,
+        sugerencias_emergencia=SUGERENCIAS_EMERGENCIA
     )
+
+@api_router.post("/nodo-cercano")
+async def get_nodo_cercano(request: NodoCercanoRequest):
+    """
+    Dado un lat/lon (click en mapa), encuentra el nodo de la red más cercano.
+    """
+    data = load_data()
+    nodos = data["nodos"]
+
+    mejor = None
+    mejor_dist = float("inf")
+
+    lat_factor = 111000
+    lon_factor = 111000 * 0.9
+
+    for nodo in nodos:
+        dlat = (nodo["lat"] - request.lat) * lat_factor
+        dlon = (nodo["lon"] - request.lon) * lon_factor
+        d = sqrt(dlat**2 + dlon**2)
+        if d < mejor_dist:
+            mejor_dist = d
+            mejor = nodo
+
+    if not mejor:
+        raise HTTPException(status_code=404, detail="No se encontro nodo cercano")
+
+    return {
+        "id": mejor["id"],
+        "nombre": mejor["nombre"],
+        "lat": mejor["lat"],
+        "lon": mejor["lon"],
+        "tipo": mejor["tipo"],
+        "distancia_m": round(mejor_dist, 1)
+    }
 
 @api_router.get("/nodos-seleccionables")
 async def get_nodos_seleccionables():
