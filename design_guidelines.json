@@ -1,0 +1,75 @@
+{
+  "theme": "dark",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "design_philosophy": "A functional, high-visibility 'Control Room' dashboard for emergency routing in Acapulco. Built on the Swiss Brutalist archetype but injected with hyper-saturated neon accents (Acid Yellow, Vivid Cyan, Signal Red) over a dark canvas to meet the 'colores llamativos' requirement. Prioritizes radical clarity, utilizing 'Crystal Glassmorphism' to float data panels above the interactive map without losing geospatial context.",
+  "colors": {
+    "background": "#09090B",
+    "surface": "rgba(9, 9, 11, 0.75)",
+    "surface_border": "rgba(255, 255, 255, 0.15)",
+    "primary": "#CCFF00",
+    "primary_hover": "#DFFF33",
+    "secondary": "#FF0055",
+    "user_node": "#00E5FF",
+    "text_main": "#FFFFFF",
+    "text_muted": "#A1A1AA"
+  },
+  "typography": {
+    "heading_font": "Clash Display",
+    "body_font": "IBM Plex Sans",
+    "mono_font": "JetBrains Mono",
+    "rules": {
+      "h1": "text-4xl sm:text-5xl font-semibold tracking-tighter text-white leading-none",
+      "h2": "text-2xl sm:text-3xl font-medium tracking-tight text-white leading-tight",
+      "h3": "text-xl font-medium tracking-tight text-white",
+      "body": "text-base text-zinc-300 leading-relaxed",
+      "data_labels": "text-xs font-mono uppercase tracking-[0.2em] text-zinc-400",
+      "data_values": "text-3xl font-mono font-medium text-white tracking-tight"
+    }
+  },
+  "layout": {
+    "strategy": "MODE B: THE 'CONTROL ROOM' GRID",
+    "structure": [
+      "Base: Absolute full-screen Leaflet map layer (z-0).",
+      "UI Layer: Floating panel (z-10) positioned top-left on desktop (w-96, h-auto max-h-[90vh]), and a bottom sheet on mobile (w-full).",
+      "Grid inside panel: Dense bento grid (grid-cols-2) for metrics. Span 1 for single metrics (time, distance), span 2 for main actions."
+    ],
+    "spacing": "Generous internal padding (p-6 or p-8) for glass panels. gap-6 between form sections."
+  },
+  "components": {
+    "surface_style": "Crystal Glassmorphism: backdrop-blur-2xl bg-zinc-950/70 border border-white/15 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.4)]",
+    "button_primary": "bg-[#CCFF00] text-black font-semibold rounded-md px-6 py-3 hover:bg-[#DFFF33] hover:text-black transition-all border border-transparent hover:shadow-[0_0_20px_rgba(204,255,0,0.4)]",
+    "shadcn_overrides": {
+      "Select": "Customize Shadcn Select to have bg-black/50, border-white/20, text-white. Hover/Focus: border-[#CCFF00]",
+      "Card": "Strip default Vercel look. Apply the Crystal Glassmorphism surface_style. Ensure p-6 padding inside."
+    },
+    "map_styling": {
+      "tile_layer": "Use CartoDB Dark Matter (https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png) for high contrast.",
+      "route_polyline": "Color: #CCFF00, Weight: 5, Opacity: 0.9",
+      "start_marker": "Color: #00E5FF, Circle marker with 8px radius, bordered white.",
+      "school_marker": "Color: #FF0055, Circle marker with 8px radius, bordered white."
+    }
+  },
+  "motion": {
+    "hover": "Interactive elements scale slightly (scale-105) or translate-y (-translate-y-1).",
+    "panel_entrance": "Slide-in: { x: -50, opacity: 0 } to { x: 0, opacity: 1 } on desktop."
+  },
+  "assets": {
+    "icons": {
+      "library": "@phosphor-icons/react",
+      "usage": "Use bold or duotone variants for high visibility on dark backgrounds."
+    },
+    "images": {
+      "acapulco_context": "https://images.unsplash.com/photo-1691714903504-beb6fb273022?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxhY2FwdWxjbyUyMGNpdHklMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzc2MzkyNTgxfDA&ixlib=rb-4.1.0&q=85",
+      "usage": "Use as a subtle intro background for loading screens or 'About' modals, heavily overlaid with bg-zinc-950/80 to maintain text contrast."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: react-leaflet, leaflet, @phosphor-icons/react, clsx, tailwind-merge.",
+    "Use pure HTML/Tailwind for the main structural wrappers to allow floating map overlays.",
+    "For the UI Panel, implement 'Crystal Glass' aesthetic. Do NOT use standard opaque Shadcn cards.",
+    "Typography MUST follow the JSON rules. Import fonts via Google Fonts (Clash Display via Fontshare if needed, or fallback to Outfit if Clash is unavailable, but IBM Plex Sans & JetBrains Mono are mandatory).",
+    "Ensure map occupies the entire viewport (`h-screen w-screen`). The controls should float above it (absolute top-6 left-6).",
+    "Add `data-testid` attributes to all interactive elements (Select, Button, Route Results) using kebab-case role-based names.",
+    "Enforce APCA contrast standards. Neon text on dark backgrounds is highly accessible, but ensure thin weights aren't lost. Use font-medium or font-semibold for neon text."
+  ]
+}
