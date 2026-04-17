@@ -125,9 +125,9 @@
     "alias": "",
     "tipo": "primaria",
     "unificada": false,
-    "nodo_id": "3161812519",
-    "lat": 16.89,
-    "lon": -99.8235
+    "nodo_id": "1912951035",
+    "lat": 16.8908,
+    "lon": -99.832
   },
   {
     "id": "E14",
@@ -145,9 +145,9 @@
     "alias": "CETis 90 Julián Blanco Jiménez",
     "tipo": "cets",
     "unificada": false,
-    "nodo_id": "1912927496",
-    "lat": 16.8895,
-    "lon": -99.825
+    "nodo_id": "1912981525",
+    "lat": 16.88917,
+    "lon": -99.83496
   },
   {
     "id": "E16",
@@ -155,9 +155,9 @@
     "alias": "",
     "tipo": "secundaria",
     "unificada": false,
-    "nodo_id": "8064291712",
-    "lat": 16.889,
-    "lon": -99.826
+    "nodo_id": "8064191071",
+    "lat": 16.88841,
+    "lon": -99.83434
   },
   {
     "id": "E17",

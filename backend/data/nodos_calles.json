@@ -9894,8 +9894,8 @@
     "id": "1912951035",
     "lat": 16.890726,
     "lon": -99.8317015,
-    "tipo": "interseccion",
-    "nombre": "Calle Lázaro Cárdenas / Solidaridad"
+    "tipo": "escuela",
+    "nombre": "Escuela Primaria Urbana Matutina Lázaro Cárdenas"
   },
   {
     "id": "1912951037",
@@ -11868,8 +11868,8 @@
     "id": "1912981525",
     "lat": 16.8895273,
     "lon": -99.8341477,
-    "tipo": "interseccion",
-    "nombre": "Andador 24 de Febrero / Cerrada Las Palmas"
+    "tipo": "escuela",
+    "nombre": "Centro de Estudios Tecnológicos Industrial y de Servicios núm. 90 Julián Blanco Jiménez"
   },
   {
     "id": "1912981526",
@@ -18399,8 +18399,8 @@
     "id": "8064191071",
     "lat": 16.8876428,
     "lon": -99.8349058,
-    "tipo": "interseccion",
-    "nombre": "Calle Sabana / Calle del PRI"
+    "tipo": "escuela",
+    "nombre": "Escuela Secundaria Técnica 68 Renacimiento"
   },
   {
     "id": "8064191074",
