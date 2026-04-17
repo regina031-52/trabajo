@@ -4,21 +4,21 @@
     "lat": 16.8717895,
     "lon": -99.8691843,
     "tipo": "interseccion",
-    "nombre": "Punto 1"
+    "nombre": "Cerca de Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "308033216",
     "lat": 16.8712339,
     "lon": -99.8719432,
     "tipo": "interseccion",
-    "nombre": "Punto 2"
+    "nombre": "Cerca de Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "308033286",
     "lat": 16.8708427,
     "lon": -99.8722698,
     "tipo": "interseccion",
-    "nombre": "Punto 3"
+    "nombre": "Cerca de Calle La Selva"
   },
   {
     "id": "308080697",
@@ -74,7 +74,7 @@
     "lat": 16.8716157,
     "lon": -99.8697426,
     "tipo": "interseccion",
-    "nombre": "Punto 4"
+    "nombre": "Cerca de Cerca de Calle La Selva"
   },
   {
     "id": "308188630",
@@ -158,7 +158,7 @@
     "lat": 16.8735599,
     "lon": -99.8717094,
     "tipo": "interseccion",
-    "nombre": "Punto 5"
+    "nombre": "Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "1428518043",
@@ -193,7 +193,7 @@
     "lat": 16.8713166,
     "lon": -99.8721623,
     "tipo": "interseccion",
-    "nombre": "Punto 6"
+    "nombre": "Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "1682373266",
@@ -739,7 +739,7 @@
     "lat": 16.863039,
     "lon": -99.8864663,
     "tipo": "interseccion",
-    "nombre": "Punto 7"
+    "nombre": "Cerca de Cerca de Avenida del Tanque"
   },
   {
     "id": "1682373816",
@@ -767,14 +767,14 @@
     "lat": 16.8631597,
     "lon": -99.8868835,
     "tipo": "interseccion",
-    "nombre": "Punto 8"
+    "nombre": "Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "1682373865",
     "lat": 16.8632321,
     "lon": -99.8867794,
     "tipo": "interseccion",
-    "nombre": "Punto 9"
+    "nombre": "Cerca de Cerca de Avenida del Tanque"
   },
   {
     "id": "1682373867",
@@ -788,7 +788,7 @@
     "lat": 16.8633023,
     "lon": -99.8866716,
     "tipo": "interseccion",
-    "nombre": "Punto 10"
+    "nombre": "Cerca de Avenida del Tanque"
   },
   {
     "id": "1682373871",
@@ -837,7 +837,7 @@
     "lat": 16.8636118,
     "lon": -99.888052,
     "tipo": "interseccion",
-    "nombre": "Punto 11"
+    "nombre": "Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "1682373932",
@@ -851,7 +851,7 @@
     "lat": 16.8637484,
     "lon": -99.8888529,
     "tipo": "interseccion",
-    "nombre": "Punto 12"
+    "nombre": "Cerca de Cerca de Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "1682373977",
@@ -879,7 +879,7 @@
     "lat": 16.8639809,
     "lon": -99.8892335,
     "tipo": "interseccion",
-    "nombre": "Punto 13"
+    "nombre": "Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "1682373998",
@@ -900,7 +900,7 @@
     "lat": 16.8640728,
     "lon": -99.888976,
     "tipo": "interseccion",
-    "nombre": "Punto 14"
+    "nombre": "Cerca de Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "1682374014",
@@ -1173,7 +1173,7 @@
     "lat": 16.8661438,
     "lon": -99.8900309,
     "tipo": "interseccion",
-    "nombre": "Punto 15"
+    "nombre": "Cerca de Calle Tamaulipas"
   },
   {
     "id": "1682374200",
@@ -1894,7 +1894,7 @@
     "lat": 16.8727203,
     "lon": -99.891362,
     "tipo": "interseccion",
-    "nombre": "Punto 16"
+    "nombre": "Cerca de Avenida Baja California"
   },
   {
     "id": "1682376074",
@@ -1992,7 +1992,7 @@
     "lat": 16.8731125,
     "lon": -99.8894903,
     "tipo": "interseccion",
-    "nombre": "Punto 17"
+    "nombre": "Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "1687166504",
@@ -2895,7 +2895,7 @@
     "lat": 16.8771459,
     "lon": -99.8896634,
     "tipo": "interseccion",
-    "nombre": "Punto 18"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "1687168772",
@@ -2937,7 +2937,7 @@
     "lat": 16.8772788,
     "lon": -99.8888379,
     "tipo": "interseccion",
-    "nombre": "Punto 19"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "1687168834",
@@ -3119,7 +3119,7 @@
     "lat": 16.8776896,
     "lon": -99.8886562,
     "tipo": "interseccion",
-    "nombre": "Punto 20"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "1687169219",
@@ -3154,7 +3154,7 @@
     "lat": 16.8778371,
     "lon": -99.8879776,
     "tipo": "interseccion",
-    "nombre": "Punto 21"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "1687169331",
@@ -3868,7 +3868,7 @@
     "lat": 16.8790954,
     "lon": -99.8823202,
     "tipo": "interseccion",
-    "nombre": "Punto 22"
+    "nombre": "Cerca de Andador Benito Juárez"
   },
   {
     "id": "1687170367",
@@ -4197,7 +4197,7 @@
     "lat": 16.8806112,
     "lon": -99.8878753,
     "tipo": "interseccion",
-    "nombre": "Punto 23"
+    "nombre": "Cerca de Calle Emiliano Zapata"
   },
   {
     "id": "1687171021",
@@ -4477,7 +4477,7 @@
     "lat": 16.868129,
     "lon": -99.883841,
     "tipo": "interseccion",
-    "nombre": "Punto 24"
+    "nombre": "Cerca de Prolongación Mortero"
   },
   {
     "id": "1687860210",
@@ -4736,7 +4736,7 @@
     "lat": 16.8699763,
     "lon": -99.8735155,
     "tipo": "interseccion",
-    "nombre": "Punto 25"
+    "nombre": "Cerca de Calle Jacarandas"
   },
   {
     "id": "1687860825",
@@ -4799,7 +4799,7 @@
     "lat": 16.8704712,
     "lon": -99.8844056,
     "tipo": "interseccion",
-    "nombre": "Punto 26"
+    "nombre": "Cerca de Calle Mortero"
   },
   {
     "id": "1687860987",
@@ -4855,7 +4855,7 @@
     "lat": 16.8707489,
     "lon": -99.8841824,
     "tipo": "interseccion",
-    "nombre": "Punto 27"
+    "nombre": "Cerca de Calle Mortero"
   },
   {
     "id": "1687861221",
@@ -4967,7 +4967,7 @@
     "lat": 16.8713078,
     "lon": -99.8837297,
     "tipo": "interseccion",
-    "nombre": "Punto 28"
+    "nombre": "Cerca de Alejandro Magno"
   },
   {
     "id": "1687861428",
@@ -5072,7 +5072,7 @@
     "lat": 16.8718074,
     "lon": -99.8860592,
     "tipo": "interseccion",
-    "nombre": "Punto 29"
+    "nombre": "Cerca de Alejandro Magno"
   },
   {
     "id": "1687861589",
@@ -5149,7 +5149,7 @@
     "lat": 16.8722405,
     "lon": -99.8836488,
     "tipo": "interseccion",
-    "nombre": "Punto 30"
+    "nombre": "Cerca de Prolongación Mortero"
   },
   {
     "id": "1687861762",
@@ -5800,7 +5800,7 @@
     "lat": 16.8584435,
     "lon": -99.8727081,
     "tipo": "interseccion",
-    "nombre": "Punto 31"
+    "nombre": "Cerca de Andador Juan Pérez"
   },
   {
     "id": "1689178015",
@@ -6619,7 +6619,7 @@
     "lat": 16.8646459,
     "lon": -99.8693367,
     "tipo": "interseccion",
-    "nombre": "Punto 32"
+    "nombre": "Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "1689178532",
@@ -6738,7 +6738,7 @@
     "lat": 16.8661931,
     "lon": -99.8694124,
     "tipo": "interseccion",
-    "nombre": "Punto 33"
+    "nombre": "Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "1689178594",
@@ -6836,7 +6836,7 @@
     "lat": 16.8674634,
     "lon": -99.870468,
     "tipo": "interseccion",
-    "nombre": "Punto 34"
+    "nombre": "Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "1689178636",
@@ -7004,7 +7004,7 @@
     "lat": 16.8646962,
     "lon": -99.8898253,
     "tipo": "interseccion",
-    "nombre": "Punto 35"
+    "nombre": "Cerca de Calle Vicente Guerrero"
   },
   {
     "id": "1910568149",
@@ -7151,7 +7151,7 @@
     "lat": 16.8726895,
     "lon": -99.8711379,
     "tipo": "interseccion",
-    "nombre": "Punto 36"
+    "nombre": "Cerca de Calle Martín Heredia"
   },
   {
     "id": "1913121593",
@@ -7417,14 +7417,14 @@
     "lat": 16.8775894,
     "lon": -99.8858124,
     "tipo": "interseccion",
-    "nombre": "Punto 37"
+    "nombre": "Cerca de Cerca de Cerca de Andador Mangos"
   },
   {
     "id": "1913342998",
     "lat": 16.8776189,
     "lon": -99.8862952,
     "tipo": "interseccion",
-    "nombre": "Punto 38"
+    "nombre": "Cerca de Paseo de la Cañada"
   },
   {
     "id": "1913343000",
@@ -7452,35 +7452,35 @@
     "lat": 16.8778903,
     "lon": -99.8855296,
     "tipo": "interseccion",
-    "nombre": "Punto 40"
+    "nombre": "Cerca de Andador Mangos"
   },
   {
     "id": "1913343026",
     "lat": 16.8779699,
     "lon": -99.8864018,
     "tipo": "interseccion",
-    "nombre": "Punto 41"
+    "nombre": "Cerca de Cerca de Cerca de Cerca de Andador Mangos"
   },
   {
     "id": "1913343027",
     "lat": 16.8779635,
     "lon": -99.8858835,
     "tipo": "interseccion",
-    "nombre": "Punto 42"
+    "nombre": "Cerca de Cerca de Cerca de Andador Mangos"
   },
   {
     "id": "1913343030",
     "lat": 16.878053,
     "lon": -99.8854537,
     "tipo": "interseccion",
-    "nombre": "Punto 43"
+    "nombre": "Cerca de Cerca de Andador Mangos"
   },
   {
     "id": "1913343035",
     "lat": 16.8780661,
     "lon": -99.8861249,
     "tipo": "interseccion",
-    "nombre": "Punto 44"
+    "nombre": "Cerca de Cerca de Cerca de Cerca de Andador Mangos"
   },
   {
     "id": "1913343041",
@@ -7494,14 +7494,14 @@
     "lat": 16.8781829,
     "lon": -99.885795,
     "tipo": "interseccion",
-    "nombre": "Punto 45"
+    "nombre": "Cerca de Cerca de Andador Mangos"
   },
   {
     "id": "1913343068",
     "lat": 16.8782894,
     "lon": -99.8860444,
     "tipo": "interseccion",
-    "nombre": "Punto 46"
+    "nombre": "Cerca de Cerca de Cerca de Andador Mangos"
   },
   {
     "id": "1913343078",
@@ -7697,77 +7697,77 @@
     "lat": 16.8639804,
     "lon": -99.8700877,
     "tipo": "interseccion",
-    "nombre": "Punto 47"
+    "nombre": "Cerca de Cerca de Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "2007033379",
     "lat": 16.8640398,
     "lon": -99.8699301,
     "tipo": "interseccion",
-    "nombre": "Punto 48"
+    "nombre": "Cerca de Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "2007033383",
     "lat": 16.8640984,
     "lon": -99.8697751,
     "tipo": "interseccion",
-    "nombre": "Punto 49"
+    "nombre": "Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "2007033385",
     "lat": 16.8641453,
     "lon": -99.8696509,
     "tipo": "interseccion",
-    "nombre": "Punto 50"
+    "nombre": "Cerca de Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "2007033397",
     "lat": 16.8645135,
     "lon": -99.8704424,
     "tipo": "interseccion",
-    "nombre": "Punto 51"
+    "nombre": "Cerca de Calle Los Amates"
   },
   {
     "id": "2007033400",
     "lat": 16.864524,
     "lon": -99.8702926,
     "tipo": "interseccion",
-    "nombre": "Punto 52"
+    "nombre": "Cerca de Cerca de Cerca de Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "2007033402",
     "lat": 16.86454,
     "lon": -99.8701341,
     "tipo": "interseccion",
-    "nombre": "Punto 53"
+    "nombre": "Cerca de Cerca de Cerca de Cerca de Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "2007033404",
     "lat": 16.8645569,
     "lon": -99.8699672,
     "tipo": "interseccion",
-    "nombre": "Punto 54"
+    "nombre": "Cerca de Cerca de Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "2007033409",
     "lat": 16.8645734,
     "lon": -99.869805,
     "tipo": "interseccion",
-    "nombre": "Punto 55"
+    "nombre": "Cerca de Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "2007033459",
     "lat": 16.8709608,
     "lon": -99.8722493,
     "tipo": "interseccion",
-    "nombre": "Punto 56"
+    "nombre": "Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "3161812189",
     "lat": 16.8582234,
     "lon": -99.8912493,
     "tipo": "interseccion",
-    "nombre": "Punto 57"
+    "nombre": "Cerca de Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "3161812201",
@@ -7851,14 +7851,14 @@
     "lat": 16.8644284,
     "lon": -99.8813591,
     "tipo": "interseccion",
-    "nombre": "Punto 58"
+    "nombre": "Cerca de Cerca de Calle Wilfrido Massieu"
   },
   {
     "id": "3161812233",
     "lat": 16.864462,
     "lon": -99.8812467,
     "tipo": "interseccion",
-    "nombre": "Punto 59"
+    "nombre": "Cerca de Avenida Universidad"
   },
   {
     "id": "3161812234",
@@ -7879,7 +7879,7 @@
     "lat": 16.8651714,
     "lon": -99.8781534,
     "tipo": "interseccion",
-    "nombre": "Punto 60"
+    "nombre": "Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "3161812238",
@@ -7942,7 +7942,7 @@
     "lat": 16.8760516,
     "lon": -99.8887538,
     "tipo": "interseccion",
-    "nombre": "Punto 61"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "5864515671",
@@ -8089,7 +8089,7 @@
     "lat": 16.8717925,
     "lon": -99.8776819,
     "tipo": "interseccion",
-    "nombre": "Punto 62"
+    "nombre": "Cerca de Calle Venezuela"
   },
   {
     "id": "5920958688",
@@ -8565,7 +8565,7 @@
     "lat": 16.8612174,
     "lon": -99.895288,
     "tipo": "interseccion",
-    "nombre": "Punto 63"
+    "nombre": "Cerca de Avenida Sonora"
   },
   {
     "id": "8155252289",
@@ -8586,7 +8586,7 @@
     "lat": 16.8610468,
     "lon": -99.8916826,
     "tipo": "interseccion",
-    "nombre": "Punto 64"
+    "nombre": "Cerca de Cerrada 18 de Marzo"
   },
   {
     "id": "8155332915",
@@ -8754,7 +8754,7 @@
     "lat": 16.8704607,
     "lon": -99.8876446,
     "tipo": "interseccion",
-    "nombre": "Punto 65"
+    "nombre": "Cerca de Calle Ciruelo"
   },
   {
     "id": "8155987898",
@@ -8768,7 +8768,7 @@
     "lat": 16.872173,
     "lon": -99.8879984,
     "tipo": "interseccion",
-    "nombre": "Punto 66"
+    "nombre": "Cerca de Avenida Baja California"
   },
   {
     "id": "8156017857",
@@ -8796,7 +8796,7 @@
     "lat": 16.8761309,
     "lon": -99.8924435,
     "tipo": "interseccion",
-    "nombre": "Punto 67"
+    "nombre": "Cerca de Avenida División del Norte"
   },
   {
     "id": "8158417115",
@@ -8831,7 +8831,7 @@
     "lat": 16.8773083,
     "lon": -99.8914229,
     "tipo": "interseccion",
-    "nombre": "Punto 68"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8158505611",
@@ -8859,14 +8859,14 @@
     "lat": 16.8794714,
     "lon": -99.8904862,
     "tipo": "interseccion",
-    "nombre": "Punto 69"
+    "nombre": "Cerca de Cerca de 26 de Marzo"
   },
   {
     "id": "8158578451",
     "lat": 16.8783921,
     "lon": -99.8890485,
     "tipo": "interseccion",
-    "nombre": "Punto 70"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8158578453",
@@ -8894,7 +8894,7 @@
     "lat": 16.8804204,
     "lon": -99.8889948,
     "tipo": "interseccion",
-    "nombre": "Punto 71"
+    "nombre": "Cerca de Andador Mangos"
   },
   {
     "id": "8158625783",
@@ -8964,7 +8964,7 @@
     "lat": 16.8800325,
     "lon": -99.8901714,
     "tipo": "interseccion",
-    "nombre": "Punto 72"
+    "nombre": "Cerca de Andador Monte Verde"
   },
   {
     "id": "8158625802",
@@ -9034,14 +9034,14 @@
     "lat": 16.8629625,
     "lon": -99.886387,
     "tipo": "interseccion",
-    "nombre": "Punto 73"
+    "nombre": "Cerca de Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8158798178",
     "lat": 16.862998,
     "lon": -99.8862956,
     "tipo": "interseccion",
-    "nombre": "Punto 74"
+    "nombre": "Cerca de Cerca de Avenida del Tanque"
   },
   {
     "id": "8158798179",
@@ -9069,14 +9069,14 @@
     "lat": 16.8642358,
     "lon": -99.882044,
     "tipo": "interseccion",
-    "nombre": "Punto 75"
+    "nombre": "Cerca de Cerca de Calle Wilfrido Massieu"
   },
   {
     "id": "8158847831",
     "lat": 16.8626132,
     "lon": -99.880686,
     "tipo": "interseccion",
-    "nombre": "Punto 76"
+    "nombre": "Cerca de Cerrada Cristóbal Colón"
   },
   {
     "id": "8158847832",
@@ -9153,7 +9153,7 @@
     "lat": 16.8651099,
     "lon": -99.8822963,
     "tipo": "interseccion",
-    "nombre": "Punto 77"
+    "nombre": "Cerca de Calle Wilfrido Massieu"
   },
   {
     "id": "8179941517",
@@ -9181,7 +9181,7 @@
     "lat": 16.8676337,
     "lon": -99.8840679,
     "tipo": "interseccion",
-    "nombre": "Punto 78"
+    "nombre": "Cerca de Calle Mortero"
   },
   {
     "id": "8179974815",
@@ -9209,7 +9209,7 @@
     "lat": 16.8649002,
     "lon": -99.876303,
     "tipo": "interseccion",
-    "nombre": "Punto 79"
+    "nombre": "Cerca de Calle la Nao"
   },
   {
     "id": "8180083310",
@@ -9272,7 +9272,7 @@
     "lat": 16.8706072,
     "lon": -99.8866479,
     "tipo": "interseccion",
-    "nombre": "Punto 80"
+    "nombre": "Cerca de Citlali"
   },
   {
     "id": "8180174146",
@@ -9286,28 +9286,28 @@
     "lat": 16.8701298,
     "lon": -99.8863502,
     "tipo": "interseccion",
-    "nombre": "Punto 81"
+    "nombre": "Cerca de Cerca de Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos"
   },
   {
     "id": "8180174150",
     "lat": 16.8699258,
     "lon": -99.8846604,
     "tipo": "interseccion",
-    "nombre": "Punto 82"
+    "nombre": "Cerca de Calle 11 de Marzo"
   },
   {
     "id": "8180174152",
     "lat": 16.8700965,
     "lon": -99.8852988,
     "tipo": "interseccion",
-    "nombre": "Punto 83"
+    "nombre": "Cerca de Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos"
   },
   {
     "id": "8180174155",
     "lat": 16.8702453,
     "lon": -99.8861182,
     "tipo": "interseccion",
-    "nombre": "Punto 84"
+    "nombre": "Cerca de Cerca de Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos"
   },
   {
     "id": "8180228058",
@@ -9321,7 +9321,7 @@
     "lat": 16.8677921,
     "lon": -99.8815973,
     "tipo": "interseccion",
-    "nombre": "Punto 85"
+    "nombre": "Cerca de Nerón"
   },
   {
     "id": "8180289057",
@@ -9342,14 +9342,14 @@
     "lat": 16.8691869,
     "lon": -99.8802886,
     "tipo": "interseccion",
-    "nombre": "Punto 86"
+    "nombre": "Cerca de Calle Nerón"
   },
   {
     "id": "8180452222",
     "lat": 16.870353,
     "lon": -99.8827972,
     "tipo": "interseccion",
-    "nombre": "Punto 87"
+    "nombre": "Cerca de Primaria 7"
   },
   {
     "id": "8180452223",
@@ -9377,7 +9377,7 @@
     "lat": 16.870681,
     "lon": -99.8830512,
     "tipo": "interseccion",
-    "nombre": "Punto 88"
+    "nombre": "Cerca de Cerca de Primaria 7"
   },
   {
     "id": "8180452234",
@@ -9391,21 +9391,21 @@
     "lat": 16.8704871,
     "lon": -99.8828276,
     "tipo": "interseccion",
-    "nombre": "Punto 89"
+    "nombre": "Cerca de Primaria 7"
   },
   {
     "id": "8180452236",
     "lat": 16.8703906,
     "lon": -99.8830871,
     "tipo": "interseccion",
-    "nombre": "Punto 90"
+    "nombre": "Cerca de Primaria 7"
   },
   {
     "id": "8180452237",
     "lat": 16.8704733,
     "lon": -99.8829583,
     "tipo": "interseccion",
-    "nombre": "Punto 91"
+    "nombre": "Cerca de Cerca de Primaria 7"
   },
   {
     "id": "8180452240",
@@ -9426,7 +9426,7 @@
     "lat": 16.8708189,
     "lon": -99.8798231,
     "tipo": "interseccion",
-    "nombre": "Punto 92"
+    "nombre": "Cerca de Prolongación Delicias"
   },
   {
     "id": "8180494639",
@@ -9447,7 +9447,7 @@
     "lat": 16.8695012,
     "lon": -99.8803975,
     "tipo": "interseccion",
-    "nombre": "Punto 93"
+    "nombre": "Cerca de Calle Nerón"
   },
   {
     "id": "8180578158",
@@ -9538,7 +9538,7 @@
     "lat": 16.8598195,
     "lon": -99.870954,
     "tipo": "interseccion",
-    "nombre": "Punto 94"
+    "nombre": "Cerca de Avenida Bella Vista"
   },
   {
     "id": "8184434384",
@@ -9573,7 +9573,7 @@
     "lat": 16.8675149,
     "lon": -99.8755817,
     "tipo": "interseccion",
-    "nombre": "Punto 95"
+    "nombre": "Cerca de Calle el Tigre"
   },
   {
     "id": "8184769854",
@@ -9587,7 +9587,7 @@
     "lat": 16.868068,
     "lon": -99.8733707,
     "tipo": "interseccion",
-    "nombre": "Punto 96"
+    "nombre": "Cerca de Calle Laurel"
   },
   {
     "id": "8184865356",
@@ -9629,7 +9629,7 @@
     "lat": 16.8706538,
     "lon": -99.8725063,
     "tipo": "interseccion",
-    "nombre": "Punto 97"
+    "nombre": "Cerca de Calle del Taller"
   },
   {
     "id": "8185021252",
@@ -9692,21 +9692,21 @@
     "lat": 16.8717654,
     "lon": -99.8824821,
     "tipo": "interseccion",
-    "nombre": "Punto 98"
+    "nombre": "Cerca de Cerca de Prolongación Mortero"
   },
   {
     "id": "8185223544",
     "lat": 16.8717973,
     "lon": -99.8828962,
     "tipo": "interseccion",
-    "nombre": "Punto 99"
+    "nombre": "Cerca de Cerca de Prolongación Mortero"
   },
   {
     "id": "8185223545",
     "lat": 16.8717797,
     "lon": -99.8826106,
     "tipo": "interseccion",
-    "nombre": "Punto 100"
+    "nombre": "Cerca de Prolongación Mortero"
   },
   {
     "id": "8185223547",
@@ -9720,14 +9720,14 @@
     "lat": 16.8733261,
     "lon": -99.8841387,
     "tipo": "interseccion",
-    "nombre": "Punto 101"
+    "nombre": "Cerca de Prolongación Mortero"
   },
   {
     "id": "8185231160",
     "lat": 16.8723937,
     "lon": -99.8854664,
     "tipo": "interseccion",
-    "nombre": "Punto 102"
+    "nombre": "Cerca de Avenida José Francisco Juiz Massieu"
   },
   {
     "id": "8185231161",
@@ -9755,7 +9755,7 @@
     "lat": 16.8745087,
     "lon": -99.8876403,
     "tipo": "interseccion",
-    "nombre": "Punto 103"
+    "nombre": "Cerca de Paseo de la Cañada"
   },
   {
     "id": "8185293344",
@@ -9776,7 +9776,7 @@
     "lat": 16.8734046,
     "lon": -99.8847107,
     "tipo": "interseccion",
-    "nombre": "Punto 104"
+    "nombre": "Cerca de Cerca de Prolongación Mortero"
   },
   {
     "id": "8185353449",
@@ -9881,7 +9881,7 @@
     "lat": 16.8746293,
     "lon": -99.8756884,
     "tipo": "interseccion",
-    "nombre": "Punto 105"
+    "nombre": "Cerca de Colombia"
   },
   {
     "id": "8187808399",
@@ -9993,7 +9993,7 @@
     "lat": 16.8791482,
     "lon": -99.8867656,
     "tipo": "interseccion",
-    "nombre": "Punto 106"
+    "nombre": "Cerca de Paseo de la Cañada"
   },
   {
     "id": "8188281782",
@@ -10112,7 +10112,7 @@
     "lat": 16.8772525,
     "lon": -99.8815437,
     "tipo": "interseccion",
-    "nombre": "Punto 107"
+    "nombre": "Cerca de Calle Juan R. Escudero"
   },
   {
     "id": "8188448815",
@@ -10154,7 +10154,7 @@
     "lat": 16.8788503,
     "lon": -99.8790734,
     "tipo": "interseccion",
-    "nombre": "Punto 108"
+    "nombre": "Cerca de Andador Guadalupe Victoria"
   },
   {
     "id": "8188551937",
@@ -10273,7 +10273,7 @@
     "lat": 16.8716655,
     "lon": -99.8712664,
     "tipo": "interseccion",
-    "nombre": "Punto 109"
+    "nombre": "Cerca de Calle Francisco Villa"
   },
   {
     "id": "8191215788",
@@ -10434,14 +10434,14 @@
     "lat": 16.8738551,
     "lon": -99.8695138,
     "tipo": "interseccion",
-    "nombre": "Punto 110"
+    "nombre": "Cerca de Andador Ometepec"
   },
   {
     "id": "8191577064",
     "lat": 16.8741693,
     "lon": -99.8699247,
     "tipo": "interseccion",
-    "nombre": "Punto 111"
+    "nombre": "Cerca de Cerca de Andador Ometepec"
   },
   {
     "id": "8191876247",
@@ -10518,7 +10518,7 @@
     "lat": 16.8762168,
     "lon": -99.8750943,
     "tipo": "interseccion",
-    "nombre": "Punto 112"
+    "nombre": "Cerca de Calle Juan Escutia"
   },
   {
     "id": "8192061627",
@@ -10630,7 +10630,7 @@
     "lat": 16.8719394,
     "lon": -99.8744546,
     "tipo": "interseccion",
-    "nombre": "Punto 113"
+    "nombre": "Cerca de Calle Jacarandas"
   },
   {
     "id": "8597403410",
@@ -10644,14 +10644,14 @@
     "lat": 16.867282,
     "lon": -99.869746,
     "tipo": "interseccion",
-    "nombre": "Punto 114"
+    "nombre": "Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "8597529362",
     "lat": 16.8673102,
     "lon": -99.8702408,
     "tipo": "interseccion",
-    "nombre": "Punto 115"
+    "nombre": "Cerca de Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "8597604441",
@@ -10679,7 +10679,7 @@
     "lat": 16.8656552,
     "lon": -99.8704507,
     "tipo": "interseccion",
-    "nombre": "Punto 116"
+    "nombre": "Cerca de Cerca de Cerca de Calle Los Amates"
   },
   {
     "id": "8597829825",
@@ -10693,7 +10693,7 @@
     "lat": 16.8680674,
     "lon": -99.8707813,
     "tipo": "interseccion",
-    "nombre": "Punto 117"
+    "nombre": "Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "8598364144",
@@ -10707,7 +10707,7 @@
     "lat": 16.8693226,
     "lon": -99.8717871,
     "tipo": "interseccion",
-    "nombre": "Punto 118"
+    "nombre": "Cerca de Privada Cuauhtémoc"
   },
   {
     "id": "8598364150",
@@ -10721,7 +10721,7 @@
     "lat": 16.8684807,
     "lon": -99.8943472,
     "tipo": "interseccion",
-    "nombre": "Punto 119"
+    "nombre": "Cerca de Calle Tlaxcala"
   },
   {
     "id": "8598398589",
@@ -10735,7 +10735,7 @@
     "lat": 16.8646063,
     "lon": -99.8704721,
     "tipo": "interseccion",
-    "nombre": "Punto 120"
+    "nombre": "Cerca de Cerca de Calle Los Amates"
   },
   {
     "id": "8598786124",
@@ -10777,7 +10777,7 @@
     "lat": 16.8751966,
     "lon": -99.8831758,
     "tipo": "interseccion",
-    "nombre": "Punto 121"
+    "nombre": "Cerca de Avenida Adolfo Ruiz Cortines"
   },
   {
     "id": "8599171827",
@@ -10819,7 +10819,7 @@
     "lat": 16.8632417,
     "lon": -99.8700008,
     "tipo": "interseccion",
-    "nombre": "Punto 122"
+    "nombre": "Cerca de Calle Amates"
   },
   {
     "id": "8601520318",
@@ -10833,7 +10833,7 @@
     "lat": 16.8582876,
     "lon": -99.8688018,
     "tipo": "interseccion",
-    "nombre": "Punto 123"
+    "nombre": "Cerca de Avenida Costera Miguel Alemán"
   },
   {
     "id": "8601520330",
@@ -10854,21 +10854,21 @@
     "lat": 16.8647305,
     "lon": -99.8724832,
     "tipo": "interseccion",
-    "nombre": "Punto 124"
+    "nombre": "Cerca de Cerca de Felipe Segundo"
   },
   {
     "id": "8601714040",
     "lat": 16.8645742,
     "lon": -99.8722588,
     "tipo": "interseccion",
-    "nombre": "Punto 125"
+    "nombre": "Cerca de Felipe Segundo"
   },
   {
     "id": "8601714041",
     "lat": 16.8647754,
     "lon": -99.872333,
     "tipo": "interseccion",
-    "nombre": "Punto 126"
+    "nombre": "Cerca de Cerca de Felipe Segundo"
   },
   {
     "id": "8601714042",
@@ -10938,7 +10938,7 @@
     "lat": 16.8608475,
     "lon": -99.888848,
     "tipo": "interseccion",
-    "nombre": "Punto 127"
+    "nombre": "Cerca de Calle Juan Sebastián El Cano"
   },
   {
     "id": "8601737212",
@@ -10959,21 +10959,21 @@
     "lat": 16.8602205,
     "lon": -99.8750189,
     "tipo": "interseccion",
-    "nombre": "Punto 128"
+    "nombre": "Cerca de Cerca de Cerca de Juan de la Cosa"
   },
   {
     "id": "8601749019",
     "lat": 16.8600691,
     "lon": -99.8751037,
     "tipo": "interseccion",
-    "nombre": "Punto 129"
+    "nombre": "Cerca de Cerca de Juan de la Cosa"
   },
   {
     "id": "8601749020",
     "lat": 16.860354,
     "lon": -99.8749441,
     "tipo": "interseccion",
-    "nombre": "Punto 130"
+    "nombre": "Cerca de Juan de la Cosa"
   },
   {
     "id": "8601749022",
@@ -10994,7 +10994,7 @@
     "lat": 16.875787,
     "lon": -99.879926,
     "tipo": "interseccion",
-    "nombre": "Punto 131"
+    "nombre": "Cerca de Avenida Adolfo Ruiz Cortines"
   },
   {
     "id": "8601757830",
@@ -11008,21 +11008,21 @@
     "lat": 16.8761167,
     "lon": -99.8800389,
     "tipo": "interseccion",
-    "nombre": "Punto 132"
+    "nombre": "Cerca de Avenida Adolfo Ruiz Cortines"
   },
   {
     "id": "8601776836",
     "lat": 16.8630705,
     "lon": -99.8877885,
     "tipo": "interseccion",
-    "nombre": "Punto 133"
+    "nombre": "Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8601776838",
     "lat": 16.8629836,
     "lon": -99.8879622,
     "tipo": "interseccion",
-    "nombre": "Punto 134"
+    "nombre": "Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8601776839",
@@ -11036,14 +11036,14 @@
     "lat": 16.863504,
     "lon": -99.8882846,
     "tipo": "interseccion",
-    "nombre": "Punto 135"
+    "nombre": "Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8601776845",
     "lat": 16.8634253,
     "lon": -99.889074,
     "tipo": "interseccion",
-    "nombre": "Punto 136"
+    "nombre": "Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8601776846",
@@ -11064,21 +11064,21 @@
     "lat": 16.8631285,
     "lon": -99.8880479,
     "tipo": "interseccion",
-    "nombre": "Punto 137"
+    "nombre": "Cerca de Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8601776863",
     "lat": 16.86279,
     "lon": -99.8878475,
     "tipo": "interseccion",
-    "nombre": "Punto 138"
+    "nombre": "Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8601776864",
     "lat": 16.8635511,
     "lon": -99.8883042,
     "tipo": "interseccion",
-    "nombre": "Punto 139"
+    "nombre": "Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8601897686",
@@ -11141,7 +11141,7 @@
     "lat": 16.8635975,
     "lon": -99.8843289,
     "tipo": "interseccion",
-    "nombre": "Punto 140"
+    "nombre": "Cerca de Calle Cerro Azul"
   },
   {
     "id": "8602092884",
@@ -11162,7 +11162,7 @@
     "lat": 16.8638759,
     "lon": -99.883363,
     "tipo": "interseccion",
-    "nombre": "Punto 141"
+    "nombre": "Cerca de Calle Mar Mediterráneo"
   },
   {
     "id": "8602092892",
@@ -11190,28 +11190,28 @@
     "lat": 16.8601268,
     "lon": -99.8810193,
     "tipo": "interseccion",
-    "nombre": "Punto 142"
+    "nombre": "Cerca de Calle Alemania"
   },
   {
     "id": "8602571847",
     "lat": 16.8600434,
     "lon": -99.8808932,
     "tipo": "interseccion",
-    "nombre": "Punto 143"
+    "nombre": "Cerca de Calle Alemania"
   },
   {
     "id": "8602571848",
     "lat": 16.8599715,
     "lon": -99.8797104,
     "tipo": "interseccion",
-    "nombre": "Punto 144"
+    "nombre": "Cerca de Calle Gonzalo de Sandoval"
   },
   {
     "id": "8602591310",
     "lat": 16.8645072,
     "lon": -99.879477,
     "tipo": "interseccion",
-    "nombre": "Punto 145"
+    "nombre": "Cerca de Avenida Universidad"
   },
   {
     "id": "8602591316",
@@ -11267,7 +11267,7 @@
     "lat": 16.8598624,
     "lon": -99.8723477,
     "tipo": "interseccion",
-    "nombre": "Punto 146"
+    "nombre": "Cerca de Avenida Costera Miguel Alemán"
   },
   {
     "id": "8605361891",
@@ -11281,21 +11281,21 @@
     "lat": 16.8616143,
     "lon": -99.8700235,
     "tipo": "interseccion",
-    "nombre": "Punto 147"
+    "nombre": "Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "8605361910",
     "lat": 16.8616156,
     "lon": -99.8703548,
     "tipo": "interseccion",
-    "nombre": "Punto 148"
+    "nombre": "Cerca de Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "8605365817",
     "lat": 16.8612511,
     "lon": -99.8707813,
     "tipo": "interseccion",
-    "nombre": "Punto 149"
+    "nombre": "Cerca de Avenida Farallón del Obispo"
   },
   {
     "id": "8605365818",
@@ -11309,7 +11309,7 @@
     "lat": 16.8576106,
     "lon": -99.8950633,
     "tipo": "interseccion",
-    "nombre": "Punto 150"
+    "nombre": "Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "8605523487",
@@ -11323,7 +11323,7 @@
     "lat": 16.8584403,
     "lon": -99.8731235,
     "tipo": "interseccion",
-    "nombre": "Punto 151"
+    "nombre": "Cerca de Andador Juan Pérez"
   },
   {
     "id": "8610849454",
@@ -11358,7 +11358,7 @@
     "lat": 16.8786995,
     "lon": -99.8895925,
     "tipo": "interseccion",
-    "nombre": "Punto 152"
+    "nombre": "Cerca de 26 de Marzo"
   },
   {
     "id": "8620662325",
@@ -11393,14 +11393,14 @@
     "lat": 16.8736053,
     "lon": -99.8897563,
     "tipo": "interseccion",
-    "nombre": "Punto 153"
+    "nombre": "Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940682",
     "lat": 16.8736505,
     "lon": -99.8898253,
     "tipo": "interseccion",
-    "nombre": "Punto 154"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940683",
@@ -11414,21 +11414,21 @@
     "lat": 16.8736945,
     "lon": -99.8898022,
     "tipo": "interseccion",
-    "nombre": "Punto 155"
+    "nombre": "Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940685",
     "lat": 16.8741365,
     "lon": -99.8909274,
     "tipo": "interseccion",
-    "nombre": "Punto 156"
+    "nombre": "Cerca de Cerca de Avenida Adolfo Ruiz Cortines"
   },
   {
     "id": "8620940691",
     "lat": 16.8735,
     "lon": -99.8913445,
     "tipo": "interseccion",
-    "nombre": "Punto 157"
+    "nombre": "Cerca de Avenida Adolfo Ruiz Cortines"
   },
   {
     "id": "8620940692",
@@ -11442,7 +11442,7 @@
     "lat": 16.8752702,
     "lon": -99.8869273,
     "tipo": "interseccion",
-    "nombre": "Punto 158"
+    "nombre": "Cerca de Paseo de la Cañada"
   },
   {
     "id": "8620940697",
@@ -11456,49 +11456,49 @@
     "lat": 16.8765505,
     "lon": -99.8887262,
     "tipo": "interseccion",
-    "nombre": "Punto 159"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940699",
     "lat": 16.8767071,
     "lon": -99.8887602,
     "tipo": "interseccion",
-    "nombre": "Punto 160"
+    "nombre": "Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940700",
     "lat": 16.8766039,
     "lon": -99.8884727,
     "tipo": "interseccion",
-    "nombre": "Punto 161"
+    "nombre": "Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940701",
     "lat": 16.8767751,
     "lon": -99.8885094,
     "tipo": "interseccion",
-    "nombre": "Punto 162"
+    "nombre": "Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940702",
     "lat": 16.8766968,
     "lon": -99.888913,
     "tipo": "interseccion",
-    "nombre": "Punto 163"
+    "nombre": "Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940703",
     "lat": 16.8768098,
     "lon": -99.8883538,
     "tipo": "interseccion",
-    "nombre": "Punto 164"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940706",
     "lat": 16.87658,
     "lon": -99.8885885,
     "tipo": "interseccion",
-    "nombre": "Punto 165"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940707",
@@ -11512,35 +11512,35 @@
     "lat": 16.874898,
     "lon": -99.8893853,
     "tipo": "interseccion",
-    "nombre": "Punto 166"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940709",
     "lat": 16.8743791,
     "lon": -99.8893583,
     "tipo": "interseccion",
-    "nombre": "Punto 167"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940710",
     "lat": 16.8748403,
     "lon": -99.8892278,
     "tipo": "interseccion",
-    "nombre": "Punto 168"
+    "nombre": "Cerca de Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940711",
     "lat": 16.8743842,
     "lon": -99.8891839,
     "tipo": "interseccion",
-    "nombre": "Punto 169"
+    "nombre": "Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940712",
     "lat": 16.8745511,
     "lon": -99.8890626,
     "tipo": "interseccion",
-    "nombre": "Punto 170"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8620940716",
@@ -11554,7 +11554,7 @@
     "lat": 16.875307,
     "lon": -99.89034,
     "tipo": "interseccion",
-    "nombre": "Punto 171"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8621664982",
@@ -11596,49 +11596,49 @@
     "lat": 16.8751864,
     "lon": -99.8915847,
     "tipo": "interseccion",
-    "nombre": "Punto 172"
+    "nombre": "Cerca de Cerca de Avenida Adolfo Ruiz Cortines"
   },
   {
     "id": "8621755258",
     "lat": 16.8772936,
     "lon": -99.8877255,
     "tipo": "interseccion",
-    "nombre": "Punto 173"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8621755259",
     "lat": 16.8772564,
     "lon": -99.8880158,
     "tipo": "interseccion",
-    "nombre": "Punto 174"
+    "nombre": "Cerca de Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8621755260",
     "lat": 16.8770483,
     "lon": -99.8879761,
     "tipo": "interseccion",
-    "nombre": "Punto 175"
+    "nombre": "Cerca de Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8621755261",
     "lat": 16.8772769,
     "lon": -99.8878616,
     "tipo": "interseccion",
-    "nombre": "Punto 176"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8621755263",
     "lat": 16.8770221,
     "lon": -99.8881091,
     "tipo": "interseccion",
-    "nombre": "Punto 177"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8621755264",
     "lat": 16.8773231,
     "lon": -99.888498,
     "tipo": "interseccion",
-    "nombre": "Punto 178"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8621755265",
@@ -11652,28 +11652,28 @@
     "lat": 16.872445,
     "lon": -99.8874579,
     "tipo": "interseccion",
-    "nombre": "Punto 179"
+    "nombre": "Cerca de Cerca de Escuela Primaria Francisco Sarabia"
   },
   {
     "id": "8627801811",
     "lat": 16.872293,
     "lon": -99.8873644,
     "tipo": "interseccion",
-    "nombre": "Punto 180"
+    "nombre": "Cerca de Cerca de Avenida José Francisco Juiz Massieu"
   },
   {
     "id": "8627801815",
     "lat": 16.8724482,
     "lon": -99.8869162,
     "tipo": "interseccion",
-    "nombre": "Punto 181"
+    "nombre": "Cerca de Avenida José Francisco Juiz Massieu"
   },
   {
     "id": "8627803720",
     "lat": 16.8725823,
     "lon": -99.8870087,
     "tipo": "interseccion",
-    "nombre": "Punto 182"
+    "nombre": "Cerca de Escuela Primaria Francisco Sarabia"
   },
   {
     "id": "8627803722",
@@ -11687,14 +11687,14 @@
     "lat": 16.8696961,
     "lon": -99.8860258,
     "tipo": "interseccion",
-    "nombre": "Punto 183"
+    "nombre": "Cerca de Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos"
   },
   {
     "id": "8627899560",
     "lat": 16.8733156,
     "lon": -99.8859184,
     "tipo": "interseccion",
-    "nombre": "Punto 184"
+    "nombre": "Cerca de Avenida José Francisco Juiz Massieu"
   },
   {
     "id": "8627899561",
@@ -11715,49 +11715,49 @@
     "lat": 16.8628179,
     "lon": -99.8866256,
     "tipo": "interseccion",
-    "nombre": "Punto 185"
+    "nombre": "Cerca de Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8628184107",
     "lat": 16.8633745,
     "lon": -99.8837709,
     "tipo": "interseccion",
-    "nombre": "Punto 186"
+    "nombre": "Cerca de Cerca de Cerca de Calle Wilfrido Massieu"
   },
   {
     "id": "8628184108",
     "lat": 16.8632494,
     "lon": -99.884195,
     "tipo": "interseccion",
-    "nombre": "Punto 187"
+    "nombre": "Cerca de Cerca de Calle Wilfrido Massieu"
   },
   {
     "id": "8628184109",
     "lat": 16.8634018,
     "lon": -99.8842579,
     "tipo": "interseccion",
-    "nombre": "Punto 188"
+    "nombre": "Cerca de Calle Wilfrido Massieu"
   },
   {
     "id": "8628184111",
     "lat": 16.8599329,
     "lon": -99.8910067,
     "tipo": "interseccion",
-    "nombre": "Punto 189"
+    "nombre": "Cerca de Avenida Cuauhtémoc"
   },
   {
     "id": "8628184112",
     "lat": 16.8598386,
     "lon": -99.8912229,
     "tipo": "interseccion",
-    "nombre": "Punto 190"
+    "nombre": "Cerca de Calle Pedro Andrés de Urdaneta"
   },
   {
     "id": "8628208421",
     "lat": 16.8756316,
     "lon": -99.8851258,
     "tipo": "interseccion",
-    "nombre": "Punto 191"
+    "nombre": "Cerca de Calle 7 de Diciembre"
   },
   {
     "id": "8628208424",
@@ -11771,14 +11771,14 @@
     "lat": 16.876659,
     "lon": -99.8864394,
     "tipo": "interseccion",
-    "nombre": "Punto 192"
+    "nombre": "Cerca de Cerca de Paseo de la Cañada"
   },
   {
     "id": "8628208428",
     "lat": 16.8762874,
     "lon": -99.886428,
     "tipo": "interseccion",
-    "nombre": "Punto 193"
+    "nombre": "Cerca de Cerca de Paseo de la Cañada"
   },
   {
     "id": "8628208429",
@@ -11792,14 +11792,14 @@
     "lat": 16.8765428,
     "lon": -99.886436,
     "tipo": "interseccion",
-    "nombre": "Punto 194"
+    "nombre": "Cerca de Paseo de la Cañada"
   },
   {
     "id": "8628227711",
     "lat": 16.8643378,
     "lon": -99.8799934,
     "tipo": "interseccion",
-    "nombre": "Punto 195"
+    "nombre": "Cerca de Escuela Primaria Rural Federal Jaime..."
   },
   {
     "id": "8628227713",
@@ -11813,21 +11813,21 @@
     "lat": 16.8604811,
     "lon": -99.8752297,
     "tipo": "interseccion",
-    "nombre": "Punto 196"
+    "nombre": "Cerca de Cerca de Juan de la Cosa"
   },
   {
     "id": "8628281787",
     "lat": 16.8604323,
     "lon": -99.8751225,
     "tipo": "interseccion",
-    "nombre": "Punto 197"
+    "nombre": "Cerca de Cerca de Cerca de Juan de la Cosa"
   },
   {
     "id": "8628281788",
     "lat": 16.8603029,
     "lon": -99.8751827,
     "tipo": "interseccion",
-    "nombre": "Punto 198"
+    "nombre": "Cerca de Cerca de Cerca de Cerca de Juan de la Cosa"
   },
   {
     "id": "8628281789",
@@ -11848,14 +11848,14 @@
     "lat": 16.8726671,
     "lon": -99.883908,
     "tipo": "interseccion",
-    "nombre": "Punto 200"
+    "nombre": "Cerca de Prolongación Mortero"
   },
   {
     "id": "8631791858",
     "lat": 16.8653953,
     "lon": -99.8820506,
     "tipo": "interseccion",
-    "nombre": "Punto 201"
+    "nombre": "Cerca de Colegio Rodolfo Neri Vela"
   },
   {
     "id": "8631791859",
@@ -11869,7 +11869,7 @@
     "lat": 16.8657188,
     "lon": -99.8787676,
     "tipo": "interseccion",
-    "nombre": "Punto 202"
+    "nombre": "Cerca de Maracas"
   },
   {
     "id": "8631791862",
@@ -11883,7 +11883,7 @@
     "lat": 16.8658317,
     "lon": -99.8771703,
     "tipo": "interseccion",
-    "nombre": "Punto 203"
+    "nombre": "Cerca de Maracas"
   },
   {
     "id": "8631940876",
@@ -11897,7 +11897,7 @@
     "lat": 16.8729712,
     "lon": -99.8887829,
     "tipo": "interseccion",
-    "nombre": "Punto 204"
+    "nombre": "Cerca de Calle Paseo de la Cañada"
   },
   {
     "id": "8634163744",
@@ -11911,28 +11911,28 @@
     "lat": 16.8656661,
     "lon": -99.875553,
     "tipo": "interseccion",
-    "nombre": "Punto 205"
+    "nombre": "Cerca de Calle el Morro"
   },
   {
     "id": "8634210323",
     "lat": 16.8657344,
     "lon": -99.876292,
     "tipo": "interseccion",
-    "nombre": "Punto 206"
+    "nombre": "Cerca de Cerca de Calle el Morro"
   },
   {
     "id": "8634274798",
     "lat": 16.8677235,
     "lon": -99.8875706,
     "tipo": "interseccion",
-    "nombre": "Punto 207"
+    "nombre": "Cerca de Calle Monte Blanco"
   },
   {
     "id": "8634342229",
     "lat": 16.8723157,
     "lon": -99.8893093,
     "tipo": "interseccion",
-    "nombre": "Punto 208"
+    "nombre": "Cerca de Avenida Baja California"
   },
   {
     "id": "8634714601",
@@ -11946,7 +11946,7 @@
     "lat": 16.8654338,
     "lon": -99.8925729,
     "tipo": "interseccion",
-    "nombre": "Punto 209"
+    "nombre": "Cerca de Calle Michoacán"
   },
   {
     "id": "8634989196",
@@ -11960,21 +11960,21 @@
     "lat": 16.8736655,
     "lon": -99.8879582,
     "tipo": "interseccion",
-    "nombre": "Punto 210"
+    "nombre": "Cerca de Avenida Adolfo Ruiz Cortines"
   },
   {
     "id": "8635071265",
     "lat": 16.8643196,
     "lon": -99.881746,
     "tipo": "interseccion",
-    "nombre": "Punto 211"
+    "nombre": "Cerca de Calle Wilfrido Massieu"
   },
   {
     "id": "8635071266",
     "lat": 16.8651284,
     "lon": -99.8819554,
     "tipo": "interseccion",
-    "nombre": "Punto 212"
+    "nombre": "Cerca de Cerca de Calle Wilfrido Massieu"
   },
   {
     "id": "8642260476",
@@ -12009,7 +12009,7 @@
     "lat": 16.865097,
     "lon": -99.8791183,
     "tipo": "interseccion",
-    "nombre": "Punto 213"
+    "nombre": "Cerca de Maracas"
   },
   {
     "id": "8646405219",
@@ -12023,70 +12023,70 @@
     "lat": 16.8575555,
     "lon": -99.8920777,
     "tipo": "interseccion",
-    "nombre": "Punto 214"
+    "nombre": "Cerca de Calle J. R. Cabrillo"
   },
   {
     "id": "11296647504",
     "lat": 16.8577151,
     "lon": -99.8919103,
     "tipo": "interseccion",
-    "nombre": "Punto 215"
+    "nombre": "Cerca de Cerca de Avenida Costera Miguel Alemán"
   },
   {
     "id": "11296647505",
     "lat": 16.8578537,
     "lon": -99.8919521,
     "tipo": "interseccion",
-    "nombre": "Punto 216"
+    "nombre": "Cerca de Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "11296647506",
     "lat": 16.8580766,
     "lon": -99.8912023,
     "tipo": "interseccion",
-    "nombre": "Punto 217"
+    "nombre": "Cerca de Cerca de Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "11296647509",
     "lat": 16.8578139,
     "lon": -99.8915785,
     "tipo": "interseccion",
-    "nombre": "Punto 218"
+    "nombre": "Cerca de Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "11296647510",
     "lat": 16.857951,
     "lon": -99.8916248,
     "tipo": "interseccion",
-    "nombre": "Punto 219"
+    "nombre": "Cerca de Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "11296647511",
     "lat": 16.858097,
     "lon": -99.89167,
     "tipo": "interseccion",
-    "nombre": "Punto 220"
+    "nombre": "Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "11296647514",
     "lat": 16.8582169,
     "lon": -99.8916961,
     "tipo": "interseccion",
-    "nombre": "Punto 221"
+    "nombre": "Cerca de Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "11296647515",
     "lat": 16.8581248,
     "lon": -99.8920004,
     "tipo": "interseccion",
-    "nombre": "Punto 222"
+    "nombre": "Cerca de Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "11296647518",
     "lat": 16.858371,
     "lon": -99.8917201,
     "tipo": "interseccion",
-    "nombre": "Punto 223"
+    "nombre": "Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "11296647519",
@@ -12100,42 +12100,42 @@
     "lat": 16.8585129,
     "lon": -99.8917268,
     "tipo": "interseccion",
-    "nombre": "Punto 224"
+    "nombre": "Cerca de Calle Pedro Vasco Núñez de Balboa"
   },
   {
     "id": "11296906085",
     "lat": 16.857828,
     "lon": -99.8910675,
     "tipo": "interseccion",
-    "nombre": "Punto 225"
+    "nombre": "Cerca de Calle Gabriel Avilés"
   },
   {
     "id": "11296906092",
     "lat": 16.8576136,
     "lon": -99.8920499,
     "tipo": "interseccion",
-    "nombre": "Punto 226"
+    "nombre": "Cerca de Cerca de Calle J. R. Cabrillo"
   },
   {
     "id": "11296906093",
     "lat": 16.8575669,
     "lon": -99.8920354,
     "tipo": "interseccion",
-    "nombre": "Punto 227"
+    "nombre": "Cerca de Cerca de Calle J. R. Cabrillo"
   },
   {
     "id": "11296906108",
     "lat": 16.857284,
     "lon": -99.8926855,
     "tipo": "interseccion",
-    "nombre": "Punto 228"
+    "nombre": "Cerca de Cerca de Calle J. R. Cabrillo"
   },
   {
     "id": "11296906111",
     "lat": 16.857645,
     "lon": -99.8917457,
     "tipo": "interseccion",
-    "nombre": "Punto 229"
+    "nombre": "Cerca de Cerca de Avenida Costera Miguel Alemán"
   },
   {
     "id": "11296906112",
@@ -12149,7 +12149,7 @@
     "lat": 16.8573205,
     "lon": -99.8926963,
     "tipo": "interseccion",
-    "nombre": "Punto 230"
+    "nombre": "Cerca de Calle J. R. Cabrillo"
   },
   {
     "id": "11296906139",
@@ -12163,14 +12163,14 @@
     "lat": 16.8576424,
     "lon": -99.8934106,
     "tipo": "interseccion",
-    "nombre": "Punto 231"
+    "nombre": "Cerca de Cerca de Calle Sebastián Vizcaíno"
   },
   {
     "id": "11296906143",
     "lat": 16.8580326,
     "lon": -99.8932186,
     "tipo": "interseccion",
-    "nombre": "Punto 232"
+    "nombre": "Cerca de Cerca de Calle Sebastián Vizcaíno"
   },
   {
     "id": "11296906155",
@@ -12184,14 +12184,14 @@
     "lat": 16.8575673,
     "lon": -99.8932078,
     "tipo": "interseccion",
-    "nombre": "Punto 233"
+    "nombre": "Cerca de Cerca de Calle Sebastián Vizcaíno"
   },
   {
     "id": "11296906157",
     "lat": 16.856925,
     "lon": -99.8938031,
     "tipo": "interseccion",
-    "nombre": "Punto 234"
+    "nombre": "Cerca de Cerca de Cerca de Calle J. R. Cabrillo"
   },
   {
     "id": "11296906192",
@@ -12205,28 +12205,28 @@
     "lat": 16.8577034,
     "lon": -99.8915294,
     "tipo": "interseccion",
-    "nombre": "Punto 235"
+    "nombre": "Cerca de Avenida Costera Miguel Alemán"
   },
   {
     "id": "11296906196",
     "lat": 16.8574816,
     "lon": -99.8934688,
     "tipo": "interseccion",
-    "nombre": "Punto 236"
+    "nombre": "Cerca de Calle Sebastián Vizcaíno"
   },
   {
     "id": "11296906197",
     "lat": 16.8579392,
     "lon": -99.8935224,
     "tipo": "interseccion",
-    "nombre": "Punto 237"
+    "nombre": "Cerca de Cerca de Calle Sebastián Vizcaíno"
   },
   {
     "id": "11296906220",
     "lat": 16.860688,
     "lon": -99.8831977,
     "tipo": "interseccion",
-    "nombre": "Punto 238"
+    "nombre": "Cerca de Avenida Costera Miguel Alemán"
   },
   {
     "id": "11296906221",
@@ -12247,14 +12247,14 @@
     "lat": 16.8575057,
     "lon": -99.8909754,
     "tipo": "interseccion",
-    "nombre": "Punto 239"
+    "nombre": "Cerca de Cerca de Avenida Costera Miguel Alemán"
   },
   {
     "id": "11296906224",
     "lat": 16.8578238,
     "lon": -99.8910829,
     "tipo": "interseccion",
-    "nombre": "Punto 240"
+    "nombre": "Cerca de Cerca de Calle Gabriel Avilés"
   },
   {
     "id": "11296906225",
@@ -12275,7 +12275,7 @@
     "lat": 16.8578788,
     "lon": -99.8908978,
     "tipo": "interseccion",
-    "nombre": "Punto 241"
+    "nombre": "Cerca de Calle Gabriel Avilés"
   },
   {
     "id": "11296906232",
@@ -12289,14 +12289,14 @@
     "lat": 16.8578611,
     "lon": -99.890835,
     "tipo": "interseccion",
-    "nombre": "Punto 242"
+    "nombre": "Cerca de Avenida Costera Miguel Alemán"
   },
   {
     "id": "11296906234",
     "lat": 16.857561,
     "lon": -99.8907513,
     "tipo": "interseccion",
-    "nombre": "Punto 243"
+    "nombre": "Cerca de Avenida Costera Miguel Alemán"
   },
   {
     "id": "11296906235",
@@ -12317,14 +12317,14 @@
     "lat": 16.8772469,
     "lon": -99.8962541,
     "tipo": "interseccion",
-    "nombre": "Punto 244"
+    "nombre": "Cerca de Calle Felipe Ángeles"
   },
   {
     "id": "11364769244",
     "lat": 16.8775726,
     "lon": -99.8965841,
     "tipo": "interseccion",
-    "nombre": "Punto 245"
+    "nombre": "Cerca de Calle Felipe Ángeles"
   },
   {
     "id": "11364769249",
@@ -12338,7 +12338,7 @@
     "lat": 16.8803064,
     "lon": -99.88865,
     "tipo": "interseccion",
-    "nombre": "Punto 246"
+    "nombre": "Cerca de Andador Monte Verde"
   },
   {
     "id": "11396423022",
@@ -12352,28 +12352,28 @@
     "lat": 16.8799418,
     "lon": -99.8942899,
     "tipo": "interseccion",
-    "nombre": "Punto 247"
+    "nombre": "Cerca de Calle Rubén Figueroa"
   },
   {
     "id": "11396423029",
     "lat": 16.8798927,
     "lon": -99.8944571,
     "tipo": "interseccion",
-    "nombre": "Punto 248"
+    "nombre": "Cerca de Calle Rubén Figueroa"
   },
   {
     "id": "11396423035",
     "lat": 16.880007,
     "lon": -99.8938563,
     "tipo": "interseccion",
-    "nombre": "Punto 249"
+    "nombre": "Cerca de Calle Rubén Figueroa"
   },
   {
     "id": "11396423036",
     "lat": 16.8796616,
     "lon": -99.8919779,
     "tipo": "interseccion",
-    "nombre": "Punto 250"
+    "nombre": "Cerca de Del Campesino"
   },
   {
     "id": "11396423041",
@@ -12387,35 +12387,35 @@
     "lat": 16.8786862,
     "lon": -99.8903835,
     "tipo": "interseccion",
-    "nombre": "Punto 251"
+    "nombre": "Cerca de Andador Francisco Villa"
   },
   {
     "id": "11396423062",
     "lat": 16.8786455,
     "lon": -99.8903808,
     "tipo": "interseccion",
-    "nombre": "Punto 252"
+    "nombre": "Cerca de Andador Francisco Villa"
   },
   {
     "id": "11396423065",
     "lat": 16.8787217,
     "lon": -99.8903215,
     "tipo": "interseccion",
-    "nombre": "Punto 253"
+    "nombre": "Cerca de Cerca de Andador Francisco Villa"
   },
   {
     "id": "11396432072",
     "lat": 16.8791671,
     "lon": -99.8903782,
     "tipo": "interseccion",
-    "nombre": "Punto 254"
+    "nombre": "Cerca de Andador Acacias"
   },
   {
     "id": "11396432086",
     "lat": 16.8790621,
     "lon": -99.8897163,
     "tipo": "interseccion",
-    "nombre": "Punto 255"
+    "nombre": "Cerca de Cerca de 26 de Marzo"
   },
   {
     "id": "11397105787",
@@ -12436,7 +12436,7 @@
     "lat": 16.8790767,
     "lon": -99.889349,
     "tipo": "interseccion",
-    "nombre": "Punto 256"
+    "nombre": "Cerca de Calle Almendros"
   },
   {
     "id": "11415080681",
@@ -12450,14 +12450,14 @@
     "lat": 16.8722494,
     "lon": -99.894067,
     "tipo": "interseccion",
-    "nombre": "Punto 257"
+    "nombre": "Cerca de Calle Minatitlán"
   },
   {
     "id": "11420042684",
     "lat": 16.8734814,
     "lon": -99.8931223,
     "tipo": "interseccion",
-    "nombre": "Punto 258"
+    "nombre": "Cerca de Avenida Adolfo Ruiz Cortines"
   },
   {
     "id": "11426809261",
@@ -12471,14 +12471,14 @@
     "lat": 16.8602509,
     "lon": -99.8754531,
     "tipo": "interseccion",
-    "nombre": "Punto 259"
+    "nombre": "Cerca de Calle Israel"
   },
   {
     "id": "11442656558",
     "lat": 16.8596566,
     "lon": -99.877078,
     "tipo": "interseccion",
-    "nombre": "Punto 260"
+    "nombre": "Cerca de Calle Hernán Cortés"
   },
   {
     "id": "11507771899",
@@ -12506,21 +12506,21 @@
     "lat": 16.8616419,
     "lon": -99.886556,
     "tipo": "interseccion",
-    "nombre": "Punto 261"
+    "nombre": "Cerca de Cerca de Avenida Licenciado Manuel Gómez Morín"
   },
   {
     "id": "12312468667",
     "lat": 16.8617851,
     "lon": -99.8862615,
     "tipo": "interseccion",
-    "nombre": "Punto 262"
+    "nombre": "Cerca de Avenida Licenciado Manuel Gómez Morín"
   },
   {
     "id": "12312468668",
     "lat": 16.8623125,
     "lon": -99.885909,
     "tipo": "interseccion",
-    "nombre": "Punto 263"
+    "nombre": "Cerca de Cerca de Avenida Licenciado Manuel Gómez Morín"
   },
   {
     "id": "12782820486",

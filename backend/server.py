@@ -515,25 +515,30 @@ async def get_nodos_seleccionables():
 async def buscar_nodos(q: str = ""):
     """
     Busca nodos por nombre de calle. Tolerante a acentos.
-    Retorna los primeros 20 resultados.
+    El usuario no necesita escribir 'Calle', 'Avenida', etc.
+    Retorna los primeros 25 resultados.
     """
     data = load_data()
     nodos = data["nodos"]
-    
+
     if not q or len(q) < 2:
         return []
-    
+
     def normalize(text):
-        """Quitar acentos y convertir a minúsculas."""
         nfkd = unicodedata.normalize('NFKD', text)
         return "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
-    
+
     q_norm = normalize(q)
     resultados = []
-    
+    vistos = set()
+
+    # Búsqueda directa primero
     for nodo in nodos:
         nombre = nodo["nombre"]
-        if nombre and q_norm in normalize(nombre):
+        if not nombre or nodo["id"] in vistos:
+            continue
+        if q_norm in normalize(nombre):
+            vistos.add(nodo["id"])
             resultados.append({
                 "id": nodo["id"],
                 "nombre": nombre,
@@ -541,9 +546,38 @@ async def buscar_nodos(q: str = ""):
                 "lon": nodo["lon"],
                 "tipo": nodo["tipo"]
             })
-            if len(resultados) >= 20:
+            if len(resultados) >= 25:
                 break
-    
+
+    # Si pocos resultados, buscar sin prefijos comunes
+    if len(resultados) < 10:
+        prefijos = ["calle ", "avenida ", "andador ", "privada ", "cerrada ",
+                     "prolongacion ", "prolongación ", "callejon ", "callejón ",
+                     "cerca de "]
+        for nodo in nodos:
+            if nodo["id"] in vistos:
+                continue
+            nombre = nodo["nombre"]
+            if not nombre:
+                continue
+            nombre_norm = normalize(nombre)
+            # Quitar prefijo del nombre y buscar
+            for pref in prefijos:
+                if nombre_norm.startswith(pref):
+                    nombre_sin_pref = nombre_norm[len(pref):]
+                    if q_norm in nombre_sin_pref:
+                        vistos.add(nodo["id"])
+                        resultados.append({
+                            "id": nodo["id"],
+                            "nombre": nombre,
+                            "lat": nodo["lat"],
+                            "lon": nodo["lon"],
+                            "tipo": nodo["tipo"]
+                        })
+                        break
+            if len(resultados) >= 25:
+                break
+
     return resultados
 
 # Include the router in the main app
