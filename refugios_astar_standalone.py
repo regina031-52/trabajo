@@ -3,12 +3,16 @@
 ========================================================================
   REFUGIOS A* - Script Standalone
   Encuentra el refugio (escuela) más cercano usando el algoritmo A*
-  Colonia Ciudad Renacimiento, Acapulco, Guerrero (CP 39715)
-  
+  Ciudad Renacimiento, Acapulco de Juárez, Guerrero (CP 39715)
+
   INSTRUCCIONES PARA COMPAÑEROS:
   1. Instalar dependencias: pip install networkx matplotlib
-  2. Ejecutar: python refugios_astar_standalone.py
-  3. Seguir las instrucciones en pantalla
+  2. Poner la carpeta "data/" junto a este archivo con los 3 JSON:
+     - escuelas.json
+     - nodos_calles.json
+     - aristas_calles.json
+  3. Ejecutar: python refugios_astar_standalone.py
+  4. Seguir las instrucciones en pantalla
 ========================================================================
 """
 
@@ -18,28 +22,44 @@ from math import sqrt, atan2, degrees
 from pathlib import Path
 
 # ============================================================
-# DATOS: Escuelas / Refugios
+# DATOS: 17 Refugios de Ciudad Renacimiento
 # ============================================================
 
-ESCUELAS = [
-    {"id": "E01", "nombre": "Esc. Prim. Urb. Mat. Francisco Pérez Ríos", "alias": "", "tipo": "primaria", "unificada": False},
-    {"id": "E02", "nombre": "Primaria Benemérito de las Américas", "alias": "", "tipo": "primaria", "unificada": False},
-    {"id": "E03", "nombre": "Primaria Ignacio M. Altamirano / Estefanía Castañeda", "alias": "Ignacio M. Altamirano; Estefanía Castañeda", "tipo": "primaria", "unificada": True},
-    {"id": "E04", "nombre": "Plantel Adolfo López Mateos", "alias": "Escuela Primaria Adolfo López Mateos; Esc. Prim. Urb. Vesp. Lic. Adolfo López Mateos", "tipo": "primaria", "unificada": True},
-    {"id": "E05", "nombre": "Jardín de Niños Moisés Guevara", "alias": "", "tipo": "jardin", "unificada": False},
-    {"id": "E06", "nombre": "Escuela Primaria Francisco Sarabia", "alias": "", "tipo": "primaria", "unificada": False},
-    {"id": "E07", "nombre": "Escuela Primaria Rural Federal Jaime...", "alias": "", "tipo": "primaria", "unificada": False},
-    {"id": "E08", "nombre": "Primaria 7", "alias": "", "tipo": "primaria", "unificada": False},
-    {"id": "E09", "nombre": "Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos", "alias": "", "tipo": "primaria", "unificada": False},
-    {"id": "E10", "nombre": "Escuela Prim. Raúl Isidro Burgos", "alias": "", "tipo": "primaria", "unificada": False},
-    {"id": "E11", "nombre": "Plantel Jaime Torres Bodet No. 4 / Antonio I. Delgado", "alias": "Escuela Primaria Jaime Torres Bodet No. 4; Escuela Primaria Vespertina Antonio I. Delgado", "tipo": "primaria", "unificada": True},
-    {"id": "E12", "nombre": "Escuela Primaria Turno Matutino Gabriela Mistral", "alias": "", "tipo": "primaria", "unificada": False},
-    {"id": "E13", "nombre": "Escuela Primaria Urbana Matutina Lázaro Cárdenas", "alias": "", "tipo": "primaria", "unificada": False},
-    {"id": "E14", "nombre": "Colegio Rodolfo Neri Vela", "alias": "", "tipo": "colegio", "unificada": False},
-    {"id": "E15", "nombre": "Centro de Estudios Tecnológicos Industrial y de Servicios núm. 90 Julián Blanco Jiménez", "alias": "CETis 90 Julián Blanco Jiménez", "tipo": "cets", "unificada": False},
-    {"id": "E16", "nombre": "Escuela Secundaria Técnica 68 Renacimiento", "alias": "", "tipo": "secundaria", "unificada": False},
-    {"id": "E17", "nombre": "Escuela Secundaria General N. 49 Margarito Damián Vargas", "alias": "", "tipo": "secundaria", "unificada": False},
-    {"id": "E18", "nombre": "Desarrollo Infantil y Juvenil Renacimiento A.C.", "alias": "", "tipo": "centro_educativo", "unificada": False},
+REFUGIOS_INFO = [
+    {"id": "R01", "nombre": "Instituto Emiliano Zapata",
+     "direccion": "C. 2 93, Zapata, Emiliano Zapata, 39700"},
+    {"id": "R02", "nombre": "Esc. Prim. Urb. Mat. Francisco Pérez Ríos",
+     "direccion": "De Las Cruces s/n, Electricistas, 39715"},
+    {"id": "R03", "nombre": "Primaria Benemérito de las Américas",
+     "direccion": "Juan N. Álvarez 14, Arroyo Seco, Cd Renacimiento, 39715"},
+    {"id": "R04", "nombre": "Escuela Primaria Matutina Ignacio M. Altamirano",
+     "direccion": "Ferretería la Ceiba s/n, Cd Renacimiento, 39715"},
+    {"id": "R05", "nombre": "Jardín de Niños Manuel Acuña",
+     "direccion": "Del Valle 15, Colonia Agrícola, 39713"},
+    {"id": "R06", "nombre": "Plantel Adolfo López Mateos",
+     "direccion": "Av. Juan R. Escudero s/n, Cd Renacimiento, 39715"},
+    {"id": "R07", "nombre": "Escuela Primaria Rural Federal Jaime Nunó",
+     "direccion": "Localidad los coyotes, Cd Renacimiento, 39715"},
+    {"id": "R08", "nombre": "Escuela Primaria Adolfo López Mateos (Pedro Ascencio)",
+     "direccion": "Pedro Ascencio 5-21, Cd Renacimiento, 39715"},
+    {"id": "R09", "nombre": "Primaria 7",
+     "direccion": "Cto. Interior Renacimiento 11, Cd Renacimiento, 39715"},
+    {"id": "R10", "nombre": "Escuela Prim. Raúl Isidro Burgos",
+     "direccion": "Costa Azul 22, Cd Renacimiento, 39715"},
+    {"id": "R11", "nombre": "Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos",
+     "direccion": "Costa Azul 7, Cd Renacimiento, 39715"},
+    {"id": "R12", "nombre": "Escuela Primaria Urbana Matutina Lázaro Cárdenas",
+     "direccion": "Ejído Nuxco s/n, Cd Renacimiento, 39715"},
+    {"id": "R13", "nombre": "Escuela Primaria Turno Matutino Gabriela Mistral",
+     "direccion": "Palma Sola s/n, Cd Renacimiento, 39715"},
+    {"id": "R14", "nombre": "Escuela Primaria Vespertino Antonio I. Delgado",
+     "direccion": "Río Yolotla s/n, Cd Renacimiento, 39715"},
+    {"id": "R15", "nombre": "Escuela Primaria Francisco Sarabia",
+     "direccion": "José María Izazaga 21, Cd Renacimiento, 39715"},
+    {"id": "R16", "nombre": "Jardín de Niños Luis Hidalgo Monroy",
+     "direccion": "20 de Noviembre s/n, La Popular, 39780"},
+    {"id": "R17", "nombre": "CETis 116 Antonia Nava de Catalán",
+     "direccion": "Retorno Educación esq. Alta Quebradora, Cd Renacimiento, 39715"},
 ]
 
 SUGERENCIAS_EMERGENCIA = [
@@ -60,8 +80,9 @@ SUGERENCIAS_EMERGENCIA = [
     "Bolsas de plástico (para proteger documentos)",
 ]
 
+
 # ============================================================
-# CLASE: Grafo con NetworkX
+# CLASE: Grafo (implementación propia si no hay networkx)
 # ============================================================
 
 try:
@@ -69,18 +90,15 @@ try:
     TIENE_NETWORKX = True
 except ImportError:
     TIENE_NETWORKX = False
-    print("AVISO: networkx no está instalado. Usando implementación propia del grafo.")
-    print("Para instalar: pip install networkx")
-    print()
+    print("AVISO: networkx no instalado. Usando implementación propia.")
+    print("Para instalar: pip install networkx\n")
 
 
 class GrafoSimple:
-    """
-    Implementación simple de grafo para cuando no está disponible networkx.
-    """
+    """Grafo no dirigido simple cuando no hay networkx."""
     def __init__(self):
-        self.nodos = {}       # {id: {lat, lon, nombre, tipo}}
-        self.aristas = {}     # {id: {vecino_id: {weight, nombre}}}
+        self.nodos = {}
+        self.aristas = {}
 
     def agregar_nodo(self, nodo_id, **attrs):
         self.nodos[nodo_id] = attrs
@@ -88,12 +106,10 @@ class GrafoSimple:
             self.aristas[nodo_id] = {}
 
     def agregar_arista(self, u, v, **attrs):
-        if u not in self.aristas:
-            self.aristas[u] = {}
-        if v not in self.aristas:
-            self.aristas[v] = {}
+        if u not in self.aristas: self.aristas[u] = {}
+        if v not in self.aristas: self.aristas[v] = {}
         self.aristas[u][v] = attrs
-        self.aristas[v][u] = attrs  # Grafo no dirigido
+        self.aristas[v][u] = attrs
 
     def vecinos(self, nodo_id):
         return self.aristas.get(nodo_id, {}).keys()
@@ -115,16 +131,12 @@ class GrafoSimple:
 
 
 # ============================================================
-# FUNCIONES: Cargar datos
+# FUNCIONES: Cargar datos JSON
 # ============================================================
 
 def cargar_datos(data_dir=None):
-    """
-    Carga los archivos JSON con los datos de la red.
-    Busca en el directorio actual o en el directorio especificado.
-    """
+    """Carga los archivos JSON. Busca en varias ubicaciones."""
     if data_dir is None:
-        # Buscar en varias ubicaciones posibles
         posibles = [
             Path(__file__).parent / "data",
             Path(__file__).parent / "backend" / "data",
@@ -138,49 +150,39 @@ def cargar_datos(data_dir=None):
 
     if data_dir is None:
         print("ERROR: No se encontraron los archivos de datos JSON.")
-        print("Asegúrate de que existan los archivos:")
+        print("Asegúrate de tener la carpeta 'data/' con:")
+        print("  - escuelas.json")
         print("  - nodos_calles.json")
         print("  - aristas_calles.json")
-        print("  - escuelas.json")
         return None, None, None
 
     data_dir = Path(data_dir)
-
     with open(data_dir / "nodos_calles.json", "r", encoding="utf-8") as f:
         nodos = json.load(f)
-
     with open(data_dir / "aristas_calles.json", "r", encoding="utf-8") as f:
         aristas = json.load(f)
-
     with open(data_dir / "escuelas.json", "r", encoding="utf-8") as f:
         escuelas = json.load(f)
 
-    print(f"Datos cargados: {len(nodos)} nodos, {len(aristas)} aristas, {len(escuelas)} escuelas")
+    print(f"Datos cargados: {len(nodos)} nodos, {len(aristas)} aristas, {len(escuelas)} refugios")
     return nodos, aristas, escuelas
 
 
 def construir_grafo(nodos, aristas):
-    """
-    Construye el grafo a partir de los datos.
-    Usa networkx si está disponible, si no usa implementación propia.
-    """
+    """Construye el grafo con networkx o implementación propia."""
     if TIENE_NETWORKX:
         G = nx.Graph()
-        for nodo in nodos:
-            G.add_node(nodo["id"], lat=nodo["lat"], lon=nodo["lon"],
-                       nombre=nodo["nombre"], tipo=nodo["tipo"])
-        for arista in aristas:
-            G.add_edge(arista["origen"], arista["destino"],
-                       weight=arista["distancia_m"], nombre=arista["nombre_calle"])
+        for n in nodos:
+            G.add_node(n["id"], lat=n["lat"], lon=n["lon"], nombre=n["nombre"], tipo=n["tipo"])
+        for a in aristas:
+            G.add_edge(a["origen"], a["destino"], weight=a["distancia_m"], nombre=a["nombre_calle"])
         return G
     else:
         G = GrafoSimple()
-        for nodo in nodos:
-            G.agregar_nodo(nodo["id"], lat=nodo["lat"], lon=nodo["lon"],
-                           nombre=nodo["nombre"], tipo=nodo["tipo"])
-        for arista in aristas:
-            G.agregar_arista(arista["origen"], arista["destino"],
-                             weight=arista["distancia_m"], nombre=arista["nombre_calle"])
+        for n in nodos:
+            G.agregar_nodo(n["id"], lat=n["lat"], lon=n["lon"], nombre=n["nombre"], tipo=n["tipo"])
+        for a in aristas:
+            G.agregar_arista(a["origen"], a["destino"], weight=a["distancia_m"], nombre=a["nombre_calle"])
         return G
 
 
@@ -189,51 +191,32 @@ def construir_grafo(nodos, aristas):
 # ============================================================
 
 def heuristica(nodo1_id, nodo2_id, nodos_dict):
-    """
-    Heurística para A*: distancia euclidiana en metros.
-    """
-    n1 = nodos_dict[nodo1_id]
-    n2 = nodos_dict[nodo2_id]
-    lat_factor = 111000
-    lon_factor = 111000 * 0.9
-    dlat = (n2["lat"] - n1["lat"]) * lat_factor
-    dlon = (n2["lon"] - n1["lon"]) * lon_factor
+    """Distancia euclidiana en metros (heurística admisible)."""
+    n1, n2 = nodos_dict[nodo1_id], nodos_dict[nodo2_id]
+    dlat = (n2["lat"] - n1["lat"]) * 111000
+    dlon = (n2["lon"] - n1["lon"]) * 111000 * 0.9
     return sqrt(dlat**2 + dlon**2)
 
 
 def astar(G, origen, destino, nodos_dict):
     """
-    Algoritmo A* para encontrar la ruta más corta.
-    
-    Parámetros:
-        G: Grafo (networkx o GrafoSimple)
-        origen: ID del nodo de inicio
-        destino: ID del nodo destino
-        nodos_dict: Diccionario {id: {lat, lon, ...}}
-    
-    Retorna:
-        (ruta, distancia) donde ruta es lista de IDs y distancia es float
-        (None, inf) si no hay ruta
+    Algoritmo A* - Encuentra la ruta más corta entre dos nodos.
+    Retorna (lista_nodos, distancia) o (None, inf) si no hay ruta.
     """
     if TIENE_NETWORKX:
-        tiene_origen = origen in G
-        tiene_destino = destino in G
+        if origen not in G or destino not in G:
+            return None, float('inf')
     else:
-        tiene_origen = G.tiene_nodo(origen)
-        tiene_destino = G.tiene_nodo(destino)
-
-    if not tiene_origen or not tiene_destino:
-        return None, float('inf')
+        if not G.tiene_nodo(origen) or not G.tiene_nodo(destino):
+            return None, float('inf')
 
     if origen == destino:
         return [origen], 0
 
-    # Cola de prioridad: (f_score, contador, nodo)
     contador = 0
     open_set = [(0, contador, origen)]
     came_from = {}
     g_score = {origen: 0}
-    f_score = {origen: heuristica(origen, destino, nodos_dict)}
     open_set_hash = {origen}
 
     while open_set:
@@ -248,28 +231,19 @@ def astar(G, origen, destino, nodos_dict):
             return path, g_score[destino]
 
         open_set_hash.discard(current)
-
-        # Obtener vecinos
-        if TIENE_NETWORKX:
-            vecinos = G.neighbors(current)
-        else:
-            vecinos = G.vecinos(current)
+        vecinos = G.neighbors(current) if TIENE_NETWORKX else G.vecinos(current)
 
         for neighbor in vecinos:
             if TIENE_NETWORKX:
-                edge_data = G.get_edge_data(current, neighbor)
-                weight = edge_data.get("weight", 1)
+                weight = G.get_edge_data(current, neighbor).get("weight", 1)
             else:
                 weight = G.peso_arista(current, neighbor)
 
             tentative_g = g_score[current] + weight
-
             if tentative_g < g_score.get(neighbor, float('inf')):
                 came_from[neighbor] = current
                 g_score[neighbor] = tentative_g
                 f = tentative_g + heuristica(neighbor, destino, nodos_dict)
-                f_score[neighbor] = f
-
                 if neighbor not in open_set_hash:
                     contador += 1
                     heapq.heappush(open_set, (f, contador, neighbor))
@@ -283,30 +257,17 @@ def astar(G, origen, destino, nodos_dict):
 # ============================================================
 
 def obtener_bearing(lat1, lon1, lat2, lon2):
-    """Calcula ángulo de dirección entre dos puntos."""
-    dlat = lat2 - lat1
-    dlon = lon2 - lon1
-    angle = degrees(atan2(dlon, dlat))
-    return angle % 360
+    return degrees(atan2(lon2 - lon1, lat2 - lat1)) % 360
 
-
-def obtener_giro(bearing_prev, bearing_next):
-    """Determina dirección del giro."""
-    diff = (bearing_next - bearing_prev + 360) % 360
-    if diff < 30 or diff > 330:
-        return "Continúa recto"
-    elif 30 <= diff < 150:
-        return "Gira a la derecha"
-    elif 150 <= diff <= 210:
-        return "Da vuelta"
-    else:
-        return "Gira a la izquierda"
-
+def obtener_giro(bp, bn):
+    diff = (bn - bp + 360) % 360
+    if diff < 30 or diff > 330: return "Continúa recto"
+    elif 30 <= diff < 150: return "Gira a la derecha"
+    elif 150 <= diff <= 210: return "Da vuelta"
+    else: return "Gira a la izquierda"
 
 def generar_instrucciones(ruta, G, nodos_dict):
-    """
-    Genera instrucciones paso a paso para la ruta.
-    """
+    """Genera instrucciones paso a paso agrupando segmentos de la misma calle."""
     if len(ruta) < 2:
         return []
 
@@ -317,7 +278,6 @@ def generar_instrucciones(ruta, G, nodos_dict):
 
     for i in range(len(ruta) - 1):
         n1, n2 = ruta[i], ruta[i + 1]
-
         if TIENE_NETWORKX:
             edge = G.get_edge_data(n1, n2)
             nombre_calle = edge.get("nombre", "Sin nombre") if edge else "Sin nombre"
@@ -334,124 +294,114 @@ def generar_instrucciones(ruta, G, nodos_dict):
         else:
             paso_num += 1
             if i >= 2:
-                p0 = nodos_dict[ruta[i-2]]
-                p1 = nodos_dict[ruta[i-1]]
-                p2 = nodos_dict[ruta[i]]
-                bp = obtener_bearing(p0["lat"], p0["lon"], p1["lat"], p1["lon"])
-                bn = obtener_bearing(p1["lat"], p1["lon"], p2["lat"], p2["lon"])
-                giro = obtener_giro(bp, bn)
+                p0, p1, p2 = nodos_dict[ruta[i-2]], nodos_dict[ruta[i-1]], nodos_dict[ruta[i]]
+                giro = obtener_giro(
+                    obtener_bearing(p0["lat"], p0["lon"], p1["lat"], p1["lon"]),
+                    obtener_bearing(p1["lat"], p1["lon"], p2["lat"], p2["lon"]))
             else:
                 giro = "Camina por"
 
-            if paso_num == 1:
-                texto = f"Sal caminando por {calle_actual} ({round(dist_calle)} m)"
-            else:
-                texto = f"{giro} hacia {nombre_calle} (recorriste {round(dist_calle)} m por {calle_actual})"
-
-            instrucciones.append({"paso": paso_num, "texto": texto, "calle": calle_actual, "distancia": round(dist_calle)})
+            texto = f"Sal caminando por {calle_actual} ({round(dist_calle)} m)" if paso_num == 1 \
+                else f"{giro} hacia {nombre_calle} (recorriste {round(dist_calle)} m por {calle_actual})"
+            instrucciones.append({"paso": paso_num, "texto": texto, "distancia": round(dist_calle)})
             calle_actual = nombre_calle
             dist_calle = dist_seg
 
     if calle_actual and dist_calle > 0:
         paso_num += 1
-        instrucciones.append({"paso": paso_num, "texto": f"Continúa por {calle_actual} hasta llegar al refugio ({round(dist_calle)} m)", "calle": calle_actual, "distancia": round(dist_calle)})
+        instrucciones.append({"paso": paso_num,
+            "texto": f"Continúa por {calle_actual} hasta llegar al refugio ({round(dist_calle)} m)",
+            "distancia": round(dist_calle)})
 
     paso_num += 1
-    instrucciones.append({"paso": paso_num, "texto": "¡Has llegado al refugio!", "calle": "Destino", "distancia": 0})
-
+    instrucciones.append({"paso": paso_num, "texto": "¡Has llegado al refugio!", "distancia": 0})
     return instrucciones
 
 
 # ============================================================
-# BUSCAR NODO MÁS CERCANO
+# BUSCAR POR NOMBRE DE CALLE
 # ============================================================
 
-def buscar_nodo_cercano(nodos, texto):
-    """
-    Busca nodos por nombre de calle (tolerante a acentos y mayúsculas).
-    """
+def buscar_nodo(nodos, texto):
+    """Busca nodos por nombre de calle (tolerante a acentos)."""
     import unicodedata
-    def normalizar(t):
-        nfkd = unicodedata.normalize('NFKD', t)
-        return "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
+    def norm(t):
+        return "".join(c for c in unicodedata.normalize('NFKD', t) if not unicodedata.combining(c)).lower()
 
-    texto_norm = normalizar(texto)
-    resultados = []
+    q = norm(texto)
+    # Búsqueda directa
+    resultados = [n for n in nodos if n["nombre"] and q in norm(n["nombre"])][:20]
 
-    for nodo in nodos:
-        if nodo["nombre"] and texto_norm in normalizar(nodo["nombre"]):
-            resultados.append(nodo)
-            if len(resultados) >= 20:
-                break
+    # Si pocos resultados, buscar sin prefijos
+    if len(resultados) < 10:
+        prefijos = ["calle ", "avenida ", "andador ", "privada ", "cerrada ", "cerca de "]
+        vistos = {r["id"] for r in resultados}
+        for n in nodos:
+            if n["id"] in vistos or not n["nombre"]: continue
+            nn = norm(n["nombre"])
+            for pref in prefijos:
+                if nn.startswith(pref) and q in nn[len(pref):]:
+                    resultados.append(n)
+                    vistos.add(n["id"])
+                    break
+            if len(resultados) >= 20: break
 
     return resultados
 
 
 # ============================================================
-# VISUALIZACIÓN (opcional, requiere matplotlib)
+# VISUALIZACIÓN (requiere matplotlib)
 # ============================================================
 
 def dibujar_grafo(nodos, aristas, escuelas, ruta_coords=None, nodo_origen=None, escuela_destino=None):
-    """
-    Dibuja el grafo con matplotlib, resaltando la ruta óptima.
-    """
+    """Dibuja el grafo resaltando la ruta óptima. Guarda como ruta_refugio.png"""
     try:
-        import matplotlib.pyplot as plt
         import matplotlib
-        matplotlib.use('Agg')  # Para servidores sin display
+        matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
     except ImportError:
-        print("matplotlib no está instalado. No se puede dibujar.")
-        print("Instalar: pip install matplotlib")
+        print("matplotlib no instalado. Instalar: pip install matplotlib")
         return
 
     fig, ax = plt.subplots(1, 1, figsize=(14, 10))
     fig.patch.set_facecolor('#09090B')
     ax.set_facecolor('#09090B')
 
-    # Dibujar aristas (calles)
     nodos_dict = {n["id"]: n for n in nodos}
-    for arista in aristas:
-        n1 = nodos_dict.get(arista["origen"])
-        n2 = nodos_dict.get(arista["destino"])
+
+    # Calles
+    for a in aristas:
+        n1, n2 = nodos_dict.get(a["origen"]), nodos_dict.get(a["destino"])
         if n1 and n2:
-            ax.plot([n1["lon"], n2["lon"]], [n1["lat"], n2["lat"]],
-                    color='#333333', linewidth=0.5, alpha=0.5)
+            ax.plot([n1["lon"], n2["lon"]], [n1["lat"], n2["lat"]], color='#333333', linewidth=0.5, alpha=0.5)
 
-    # Dibujar ruta óptima
+    # Ruta óptima
     if ruta_coords:
-        lons = [c["lon"] for c in ruta_coords]
-        lats = [c["lat"] for c in ruta_coords]
-        ax.plot(lons, lats, color='#CCFF00', linewidth=3, alpha=0.9, zorder=5)
+        ax.plot([c["lon"] for c in ruta_coords], [c["lat"] for c in ruta_coords],
+                color='#CCFF00', linewidth=3, alpha=0.9, zorder=5)
 
-    # Dibujar escuelas
+    # Escuelas
     for esc in escuelas:
-        color = '#CCFF00' if escuela_destino and esc["id"] == escuela_destino["id"] else '#FF0055'
-        size = 80 if escuela_destino and esc["id"] == escuela_destino["id"] else 50
-        ax.scatter(esc["lon"], esc["lat"], c=color, s=size, zorder=10,
-                   edgecolors='white', linewidths=1.5)
-        # Nombre de la escuela
-        nombre_corto = esc["nombre"][:25] + "..." if len(esc["nombre"]) > 25 else esc["nombre"]
-        ax.annotate(nombre_corto, (esc["lon"], esc["lat"]),
-                    textcoords="offset points", xytext=(8, 8),
-                    fontsize=6, color='#FF0055', fontweight='bold')
+        es_destino = escuela_destino and esc["id"] == escuela_destino["id"]
+        ax.scatter(esc["lon"], esc["lat"], c='#CCFF00' if es_destino else '#FF0055',
+                   s=80 if es_destino else 50, zorder=10, edgecolors='white', linewidths=1.5)
+        nombre_corto = esc["nombre"][:28] + "..." if len(esc["nombre"]) > 28 else esc["nombre"]
+        ax.annotate(nombre_corto, (esc["lon"], esc["lat"]), textcoords="offset points",
+                    xytext=(8, 8), fontsize=5, color='#FF0055', fontweight='bold')
 
-    # Dibujar nodo de origen
+    # Ubicación del usuario
     if nodo_origen:
         ax.scatter(nodo_origen["lon"], nodo_origen["lat"], c='#00E5FF', s=120,
                    zorder=15, edgecolors='white', linewidths=2, marker='*')
         ax.annotate("TU UBICACIÓN", (nodo_origen["lon"], nodo_origen["lat"]),
-                    textcoords="offset points", xytext=(10, -15),
-                    fontsize=8, color='#00E5FF', fontweight='bold')
+                    textcoords="offset points", xytext=(10, -15), fontsize=8, color='#00E5FF', fontweight='bold')
 
-    ax.set_title("Refugios A* - Colonia Renacimiento, Acapulco",
-                 color='white', fontsize=14, fontweight='bold', pad=15)
+    ax.set_title("Refugios A* - Ciudad Renacimiento, Acapulco", color='white', fontsize=14, fontweight='bold', pad=15)
     ax.tick_params(colors='#555555', labelsize=7)
-    for spine in ax.spines.values():
-        spine.set_color('#333333')
+    for spine in ax.spines.values(): spine.set_color('#333333')
 
     plt.tight_layout()
-    plt.savefig("ruta_refugio.png", dpi=150, bbox_inches='tight',
-                facecolor=fig.get_facecolor())
+    plt.savefig("ruta_refugio.png", dpi=150, bbox_inches='tight', facecolor=fig.get_facecolor())
     print("\nMapa guardado como: ruta_refugio.png")
     plt.close()
 
@@ -461,10 +411,10 @@ def dibujar_grafo(nodos, aristas, escuelas, ruta_coords=None, nodo_origen=None, 
 # ============================================================
 
 def main():
-    print("=" * 60)
-    print("  REFUGIOS A* - Colonia Renacimiento, Acapulco")
+    print("=" * 65)
+    print("  REFUGIOS A* - Ciudad Renacimiento, Acapulco (CP 39715)")
     print("  Encuentra el refugio más cercano a tu ubicación")
-    print("=" * 60)
+    print("=" * 65)
     print()
 
     # 1. Cargar datos
@@ -477,29 +427,26 @@ def main():
     G = construir_grafo(nodos, aristas)
     nodos_dict = {n["id"]: n for n in nodos}
 
-    if TIENE_NETWORKX:
-        print(f"Grafo construido: {G.number_of_nodes()} nodos, {G.number_of_edges()} aristas")
-    else:
-        print(f"Grafo construido: {G.total_nodos()} nodos, {G.total_aristas()} aristas")
-    print()
+    n_nodos = G.number_of_nodes() if TIENE_NETWORKX else G.total_nodos()
+    n_aristas = G.number_of_edges() if TIENE_NETWORKX else G.total_aristas()
+    print(f"Grafo: {n_nodos} nodos, {n_aristas} aristas, {len(escuelas)} refugios\n")
 
     # 3. Seleccionar ubicación
-    print("PASO 1: Escribe el nombre de tu calle para buscar tu ubicación")
-    print("(Ejemplo: Zapata, Cuauhtémoc, Costera, Bugambilias)")
-    print()
+    print("PASO 1: Escribe el nombre de tu calle")
+    print("  (Ejemplo: Escudero, Zaragoza, Canal, Costa Azul, Cuauhtémoc)")
+    print("  No necesitas escribir 'Calle' ni 'Avenida', solo el nombre.\n")
 
     while True:
-        texto = input("Buscar calle: ").strip()
+        texto = input("  Buscar calle: ").strip()
         if not texto:
             continue
 
-        resultados = buscar_nodo_cercano(nodos, texto)
-
+        resultados = buscar_nodo(nodos, texto)
         if not resultados:
-            print(f"  No se encontraron resultados para '{texto}'. Intenta otro nombre.")
+            print(f"  No encontré '{texto}'. Intenta otro nombre.\n")
             continue
 
-        print(f"\n  Se encontraron {len(resultados)} puntos:")
+        print(f"\n  {len(resultados)} puntos encontrados:")
         for i, r in enumerate(resultados):
             print(f"    [{i+1}] {r['nombre']}")
 
@@ -508,93 +455,86 @@ def main():
             if 0 <= opcion < len(resultados):
                 nodo_origen = resultados[opcion]
                 break
-            else:
-                print("  Opción no válida.")
+            print("  Número fuera de rango.")
         except ValueError:
             print("  Escribe un número.")
 
-    print(f"\n  Ubicación seleccionada: {nodo_origen['nombre']}")
-    print(f"  Coordenadas: {nodo_origen['lat']}, {nodo_origen['lon']}")
-    print()
+    print(f"\n  Ubicación: {nodo_origen['nombre']}")
+    print(f"  Coordenadas: {nodo_origen['lat']:.5f}, {nodo_origen['lon']:.5f}\n")
 
-    # 4. Calcular rutas A* a todas las escuelas
-    print("PASO 2: Calculando ruta A* a las 18 escuelas...")
-    print()
+    # 4. Calcular rutas A*
+    print(f"PASO 2: Calculando ruta A* a los {len(escuelas)} refugios...\n")
 
     resultados_rutas = []
     for esc in escuelas:
         ruta, distancia = astar(G, nodo_origen["id"], esc["nodo_id"], nodos_dict)
         if ruta:
-            tiempo = distancia / 83.33  # 5 km/h
             resultados_rutas.append({
                 "escuela": esc,
                 "ruta": ruta,
                 "distancia": round(distancia, 1),
-                "tiempo": round(tiempo, 1)
+                "tiempo": round(distancia / 83.33, 1)  # 5 km/h
             })
 
     if not resultados_rutas:
-        print("ERROR: No se encontró ruta a ninguna escuela.")
+        print("ERROR: No se encontró ruta a ningún refugio.")
         return
 
-    # Ordenar por distancia
     resultados_rutas.sort(key=lambda r: r["distancia"])
     mejor = resultados_rutas[0]
 
-    # 5. Mostrar resultado
-    print("=" * 60)
+    # 5. Resultado
+    print("=" * 65)
     print("  RESULTADO: REFUGIO MÁS CERCANO")
-    print("=" * 60)
-    print()
-    print(f"  Escuela:   {mejor['escuela']['nombre']}")
-    if mejor['escuela']['alias']:
-        print(f"  Alias:     {mejor['escuela']['alias']}")
-    print(f"  Tipo:      {mejor['escuela']['tipo']}")
-    if mejor['escuela']['unificada']:
-        print(f"  Nota:      Plantel de doble turno (mismo edificio)")
-    print(f"  Distancia: {mejor['distancia']} m ({mejor['distancia']/1000:.1f} km)")
-    print(f"  Tiempo:    {mejor['tiempo']} min caminando")
-    print(f"  Nodos:     {len(mejor['ruta'])} puntos en la ruta")
-    print()
+    print("=" * 65)
+    print(f"\n  Refugio:    {mejor['escuela']['nombre']}")
+    if mejor['escuela'].get('alias'):
+        print(f"  Alias:      {mejor['escuela']['alias']}")
+    if mejor['escuela'].get('direccion'):
+        print(f"  Dirección:  {mejor['escuela']['direccion']}")
+    print(f"  Tipo:       {mejor['escuela']['tipo']}")
+    if mejor['escuela'].get('unificada'):
+        print(f"  Nota:       Plantel de doble turno (mismo edificio)")
+    print(f"  Distancia:  {mejor['distancia']} m ({mejor['distancia']/1000:.1f} km)")
+    print(f"  Tiempo:     {mejor['tiempo']} min caminando")
+    print(f"  Nodos:      {len(mejor['ruta'])} puntos en la ruta\n")
 
     # 6. Instrucciones paso a paso
     instrucciones = generar_instrucciones(mejor['ruta'], G, nodos_dict)
-    print("-" * 60)
+    print("-" * 65)
     print("  INSTRUCCIONES PASO A PASO")
-    print("-" * 60)
+    print("-" * 65)
     for inst in instrucciones:
-        marca = ">>>" if inst["distancia"] == 0 else f"   "
+        marca = ">>>" if inst["distancia"] == 0 else "   "
         print(f"  {marca} Paso {inst['paso']}: {inst['texto']}")
     print()
 
-    # 7. Lista de todas las escuelas
-    print("-" * 60)
-    print("  TODAS LAS ESCUELAS (ordenadas por distancia)")
-    print("-" * 60)
+    # 7. Lista de todos los refugios
+    print("-" * 65)
+    print("  TODOS LOS REFUGIOS (ordenados por distancia)")
+    print("-" * 65)
     for i, r in enumerate(resultados_rutas):
         marca = " <<<" if i == 0 else ""
-        dist_str = f"{r['distancia']/1000:.1f} km" if r['distancia'] >= 1000 else f"{round(r['distancia'])} m"
-        print(f"  {i+1:2d}. {r['escuela']['nombre'][:45]:45s} | {dist_str:>8s} | {r['tiempo']:5.1f} min{marca}")
+        d = f"{r['distancia']/1000:.1f} km" if r['distancia'] >= 1000 else f"{round(r['distancia'])} m"
+        print(f"  {i+1:2d}. {r['escuela']['nombre'][:42]:42s} | {d:>8s} | {r['tiempo']:5.1f} min{marca}")
     print()
 
-    # 8. Sugerencias de emergencia
-    print("=" * 60)
+    # 8. Kit de emergencia
+    print("=" * 65)
     print("  QUÉ LLEVAR AL REFUGIO (Kit de emergencia)")
-    print("=" * 60)
+    print("=" * 65)
     for i, sug in enumerate(SUGERENCIAS_EMERGENCIA):
         print(f"  {i+1:2d}. {sug}")
     print()
 
-    # 9. Dibujar mapa (si matplotlib está disponible)
+    # 9. Dibujar mapa
     ruta_coords = [nodos_dict[nid] for nid in mejor['ruta'] if nid in nodos_dict]
-    dibujar_grafo(nodos, aristas, escuelas,
-                  ruta_coords=ruta_coords,
-                  nodo_origen=nodo_origen,
-                  escuela_destino=mejor['escuela'])
+    dibujar_grafo(nodos, aristas, escuelas, ruta_coords=ruta_coords,
+                  nodo_origen=nodo_origen, escuela_destino=mejor['escuela'])
 
-    print("=" * 60)
+    print("=" * 65)
     print("  ¡Listo! Camina con precaución hacia tu refugio.")
-    print("=" * 60)
+    print("=" * 65)
 
 
 if __name__ == "__main__":
