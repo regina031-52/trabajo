@@ -1,182 +1,189 @@
 [
   {
-    "id": "E01",
+    "id": "R01",
+    "nombre": "Instituto Emiliano Zapata",
+    "alias": "",
+    "tipo": "instituto",
+    "unificada": false,
+    "nodo_id": "1912819857",
+    "lat": 16.8706,
+    "lon": -99.8138,
+    "direccion": "C. 2 93, Zapata, Emiliano Zapata, 39700"
+  },
+  {
+    "id": "R02",
     "nombre": "Esc. Prim. Urb. Mat. Francisco Pérez Ríos",
     "alias": "",
     "tipo": "primaria",
     "unificada": false,
-    "nodo_id": "1912974604",
-    "lat": 16.9005,
-    "lon": -99.8165
+    "nodo_id": "8017183795",
+    "lat": 16.9002,
+    "lon": -99.8239,
+    "direccion": "De Las Cruces s/n, Electricistas, 39715"
   },
   {
-    "id": "E02",
+    "id": "R03",
     "nombre": "Primaria Benemérito de las Américas",
     "alias": "",
     "tipo": "primaria",
     "unificada": false,
-    "nodo_id": "1912974404",
-    "lat": 16.899,
-    "lon": -99.8175
+    "nodo_id": "1912974296",
+    "lat": 16.8985,
+    "lon": -99.8175,
+    "direccion": "Juan N. Álvarez 14, Arroyo Seco, Cd Renacimiento, 39715"
   },
   {
-    "id": "E03",
-    "nombre": "Primaria Ignacio M. Altamirano / Estefanía Castañeda",
-    "alias": "Ignacio M. Altamirano; Estefanía Castañeda",
+    "id": "R04",
+    "nombre": "Escuela Primaria Matutina Ignacio M. Altamirano",
+    "alias": "Estefanía Castañeda (mismo plantel)",
     "tipo": "primaria",
     "unificada": true,
-    "nodo_id": "1912974033",
-    "lat": 16.8965,
-    "lon": -99.8155
+    "nodo_id": "1912974012",
+    "lat": 16.896,
+    "lon": -99.8155,
+    "direccion": "Ferretería la Ceiba s/n, Cd Renacimiento, 39715"
   },
   {
-    "id": "E04",
-    "nombre": "Plantel Adolfo López Mateos",
-    "alias": "Escuela Primaria Adolfo López Mateos; Esc. Prim. Urb. Vesp. Lic. Adolfo López Mateos",
-    "tipo": "primaria",
-    "unificada": true,
-    "nodo_id": "1859337429",
-    "lat": 16.8955,
-    "lon": -99.8185
-  },
-  {
-    "id": "E05",
-    "nombre": "Jardín de Niños Moisés Guevara",
+    "id": "R05",
+    "nombre": "Jardín de Niños Manuel Acuña",
     "alias": "",
     "tipo": "jardin",
     "unificada": false,
-    "nodo_id": "8584999727",
-    "lat": 16.8948,
-    "lon": -99.8195
+    "nodo_id": "8082914861",
+    "lat": 16.893,
+    "lon": -99.81,
+    "direccion": "Del Valle 15, Colonia Agrícola, 39713"
   },
   {
-    "id": "E06",
-    "nombre": "Escuela Primaria Francisco Sarabia",
-    "alias": "",
+    "id": "R06",
+    "nombre": "Plantel Adolfo López Mateos",
+    "alias": "Av. Juan R. Escudero",
     "tipo": "primaria",
-    "unificada": false,
-    "nodo_id": "8079690731",
-    "lat": 16.8935,
-    "lon": -99.821
+    "unificada": true,
+    "nodo_id": "1859337466",
+    "lat": 16.897,
+    "lon": -99.82,
+    "direccion": "Av. Juan R. Escudero s/n, Cd Renacimiento, 39715"
   },
   {
-    "id": "E07",
-    "nombre": "Escuela Primaria Rural Federal Jaime...",
+    "id": "R07",
+    "nombre": "Escuela Primaria Rural Federal Jaime Nunó",
     "alias": "",
     "tipo": "primaria",
     "unificada": false,
     "nodo_id": "5952186997",
     "lat": 16.8925,
-    "lon": -99.8225
+    "lon": -99.8225,
+    "direccion": "Localidad los coyotes, Cd Renacimiento, 39715"
   },
   {
-    "id": "E08",
+    "id": "R08",
+    "nombre": "Escuela Primaria Adolfo López Mateos (Pedro Ascencio)",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "1859337429",
+    "lat": 16.8955,
+    "lon": -99.8185,
+    "direccion": "Pedro Ascencio 5-21, Cd Renacimiento, 39715"
+  },
+  {
+    "id": "R09",
     "nombre": "Primaria 7",
     "alias": "",
     "tipo": "primaria",
     "unificada": false,
-    "nodo_id": "8022350613",
-    "lat": 16.898,
-    "lon": -99.821
+    "nodo_id": "1912974207",
+    "lat": 16.8975,
+    "lon": -99.8215,
+    "direccion": "Cto. Interior Renacimiento 11, Cd Renacimiento, 39715"
   },
   {
-    "id": "E09",
-    "nombre": "Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos",
-    "alias": "",
-    "tipo": "primaria",
-    "unificada": false,
-    "nodo_id": "8022336384",
-    "lat": 16.8945,
-    "lon": -99.814
-  },
-  {
-    "id": "E10",
+    "id": "R10",
     "nombre": "Escuela Prim. Raúl Isidro Burgos",
     "alias": "",
     "tipo": "primaria",
     "unificada": false,
-    "nodo_id": "8079949100",
-    "lat": 16.8935,
-    "lon": -99.813
+    "nodo_id": "8064291705",
+    "lat": 16.8923,
+    "lon": -99.8286,
+    "direccion": "Costa Azul 22, Cd Renacimiento, 39715"
   },
   {
-    "id": "E11",
-    "nombre": "Plantel Jaime Torres Bodet No. 4 / Antonio I. Delgado",
-    "alias": "Escuela Primaria Jaime Torres Bodet No. 4; Escuela Primaria Vespertina Antonio I. Delgado",
-    "tipo": "primaria",
-    "unificada": true,
-    "nodo_id": "8155368906",
-    "lat": 16.8915,
-    "lon": -99.816
-  },
-  {
-    "id": "E12",
-    "nombre": "Escuela Primaria Turno Matutino Gabriela Mistral",
+    "id": "R11",
+    "nombre": "Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos",
     "alias": "",
     "tipo": "primaria",
     "unificada": false,
-    "nodo_id": "1912961288",
-    "lat": 16.892,
-    "lon": -99.8195
+    "nodo_id": "1912927599",
+    "lat": 16.8928,
+    "lon": -99.828,
+    "direccion": "Costa Azul 7, Cd Renacimiento, 39715"
   },
   {
-    "id": "E13",
+    "id": "R12",
     "nombre": "Escuela Primaria Urbana Matutina Lázaro Cárdenas",
     "alias": "",
     "tipo": "primaria",
     "unificada": false,
     "nodo_id": "1912951035",
     "lat": 16.8908,
-    "lon": -99.832
+    "lon": -99.832,
+    "direccion": "Ejído Nuxco s/n, Cd Renacimiento, 39715"
   },
   {
-    "id": "E14",
-    "nombre": "Colegio Rodolfo Neri Vela",
+    "id": "R13",
+    "nombre": "Escuela Primaria Turno Matutino Gabriela Mistral",
     "alias": "",
-    "tipo": "colegio",
+    "tipo": "primaria",
     "unificada": false,
-    "nodo_id": "1859337219",
+    "nodo_id": "1912961260",
     "lat": 16.891,
-    "lon": -99.8205
+    "lon": -99.8195,
+    "direccion": "Palma Sola s/n, Cd Renacimiento, 39715"
   },
   {
-    "id": "E15",
-    "nombre": "Centro de Estudios Tecnológicos Industrial y de Servicios núm. 90 Julián Blanco Jiménez",
-    "alias": "CETis 90 Julián Blanco Jiménez",
-    "tipo": "cets",
+    "id": "R14",
+    "nombre": "Escuela Primaria Vespertino Antonio I. Delgado",
+    "alias": "Plantel Jaime Torres Bodet No. 4 (mismo plantel)",
+    "tipo": "primaria",
+    "unificada": true,
+    "nodo_id": "8155368906",
+    "lat": 16.8915,
+    "lon": -99.816,
+    "direccion": "Río Yolotla s/n, Cd Renacimiento, 39715"
+  },
+  {
+    "id": "R15",
+    "nombre": "Escuela Primaria Francisco Sarabia",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "8079690731",
+    "lat": 16.8935,
+    "lon": -99.821,
+    "direccion": "José María Izazaga 21, Cd Renacimiento, 39715"
+  },
+  {
+    "id": "R16",
+    "nombre": "Jardín de Niños Luis Hidalgo Monroy",
+    "alias": "",
+    "tipo": "jardin",
+    "unificada": false,
+    "nodo_id": "1912895273",
+    "lat": 16.8838,
+    "lon": -99.8308,
+    "direccion": "20 de Noviembre s/n, La Popular, 39780"
+  },
+  {
+    "id": "R17",
+    "nombre": "CETis 116 Antonia Nava de Catalán",
+    "alias": "Centro de Estudios Tecnológicos Industrial y de Servicios núm. 116",
+    "tipo": "cetis",
     "unificada": false,
     "nodo_id": "1912981525",
-    "lat": 16.88917,
-    "lon": -99.83496
-  },
-  {
-    "id": "E16",
-    "nombre": "Escuela Secundaria Técnica 68 Renacimiento",
-    "alias": "",
-    "tipo": "secundaria",
-    "unificada": false,
-    "nodo_id": "8064191071",
-    "lat": 16.88841,
-    "lon": -99.83434
-  },
-  {
-    "id": "E17",
-    "nombre": "Escuela Secundaria General N. 49 Margarito Damián Vargas",
-    "alias": "",
-    "tipo": "secundaria",
-    "unificada": false,
-    "nodo_id": "8155717384",
-    "lat": 16.8875,
-    "lon": -99.818
-  },
-  {
-    "id": "E18",
-    "nombre": "Desarrollo Infantil y Juvenil Renacimiento A.C.",
-    "alias": "",
-    "tipo": "centro_educativo",
-    "unificada": false,
-    "nodo_id": "1859337607",
-    "lat": 16.8995,
-    "lon": -99.819
+    "lat": 16.889,
+    "lon": -99.835,
+    "direccion": "Retorno Educación esq. Alta Quebradora, Cd Renacimiento, 39715"
   }
 ]
