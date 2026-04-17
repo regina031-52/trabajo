@@ -1,0 +1,182 @@
+[
+  {
+    "id": "E01",
+    "nombre": "Esc. Prim. Urb. Mat. Francisco Pérez Ríos",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "8602323861",
+    "lat": 16.875,
+    "lon": -99.885
+  },
+  {
+    "id": "E02",
+    "nombre": "Primaria Benemérito de las Américas",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "1687861628",
+    "lat": 16.872,
+    "lon": -99.88
+  },
+  {
+    "id": "E03",
+    "nombre": "Primaria Ignacio M. Altamirano / Estefanía Castañeda",
+    "alias": "Ignacio M. Altamirano; Estefanía Castañeda",
+    "tipo": "primaria",
+    "unificada": true,
+    "nodo_id": "8180228058",
+    "lat": 16.868,
+    "lon": -99.882
+  },
+  {
+    "id": "E04",
+    "nombre": "Plantel Adolfo López Mateos",
+    "alias": "Escuela Primaria Adolfo López Mateos; Esc. Prim. Urb. Vesp. Lic. Adolfo López Mateos",
+    "tipo": "primaria",
+    "unificada": true,
+    "nodo_id": "5920986506",
+    "lat": 16.87,
+    "lon": -99.878
+  },
+  {
+    "id": "E05",
+    "nombre": "Jardín de Niños Moisés Guevara",
+    "alias": "",
+    "tipo": "jardin",
+    "unificada": false,
+    "nodo_id": "1682374169",
+    "lat": 16.866,
+    "lon": -99.885
+  },
+  {
+    "id": "E06",
+    "nombre": "Escuela Primaria Francisco Sarabia",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "8627803722",
+    "lat": 16.873,
+    "lon": -99.887
+  },
+  {
+    "id": "E07",
+    "nombre": "Escuela Primaria Rural Federal Jaime...",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "8628227713",
+    "lat": 16.864,
+    "lon": -99.88
+  },
+  {
+    "id": "E08",
+    "nombre": "Primaria 7",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "8180452234",
+    "lat": 16.871,
+    "lon": -99.883
+  },
+  {
+    "id": "E09",
+    "nombre": "Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "8180154105",
+    "lat": 16.869,
+    "lon": -99.886
+  },
+  {
+    "id": "E10",
+    "nombre": "Escuela Prim. Raúl Isidro Burgos",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "1687859769",
+    "lat": 16.867,
+    "lon": -99.878
+  },
+  {
+    "id": "E11",
+    "nombre": "Plantel Jaime Torres Bodet No. 4 / Antonio I. Delgado",
+    "alias": "Escuela Primaria Jaime Torres Bodet No. 4; Escuela Primaria Vespertina Antonio I. Delgado",
+    "tipo": "primaria",
+    "unificada": true,
+    "nodo_id": "1687862669",
+    "lat": 16.875,
+    "lon": -99.88
+  },
+  {
+    "id": "E12",
+    "nombre": "Escuela Primaria Turno Matutino Gabriela Mistral",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "1682374442",
+    "lat": 16.868,
+    "lon": -99.889
+  },
+  {
+    "id": "E13",
+    "nombre": "Escuela Primaria Urbana Matutina Lázaro Cárdenas",
+    "alias": "",
+    "tipo": "primaria",
+    "unificada": false,
+    "nodo_id": "1687861707",
+    "lat": 16.872,
+    "lon": -99.885
+  },
+  {
+    "id": "E14",
+    "nombre": "Colegio Rodolfo Neri Vela",
+    "alias": "",
+    "tipo": "colegio",
+    "unificada": false,
+    "nodo_id": "8631791859",
+    "lat": 16.866,
+    "lon": -99.883
+  },
+  {
+    "id": "E15",
+    "nombre": "Centro de Estudios Tecnológicos Industrial y de Servicios núm. 90 Julián Blanco Jiménez",
+    "alias": "CETis 90 Julián Blanco Jiménez",
+    "tipo": "cets",
+    "unificada": false,
+    "nodo_id": "1687862533",
+    "lat": 16.874,
+    "lon": -99.882
+  },
+  {
+    "id": "E16",
+    "nombre": "Escuela Secundaria Técnica 68 Renacimiento",
+    "alias": "",
+    "tipo": "secundaria",
+    "unificada": false,
+    "nodo_id": "1682375254",
+    "lat": 16.87,
+    "lon": -99.89
+  },
+  {
+    "id": "E17",
+    "nombre": "Escuela Secundaria General N. 49 Margarito Damián Vargas",
+    "alias": "",
+    "tipo": "secundaria",
+    "unificada": false,
+    "nodo_id": "1682374063",
+    "lat": 16.865,
+    "lon": -99.886
+  },
+  {
+    "id": "E18",
+    "nombre": "Desarrollo Infantil y Juvenil Renacimiento A.C.",
+    "alias": "",
+    "tipo": "centro_educativo",
+    "unificada": false,
+    "nodo_id": "1687862000",
+    "lat": 16.873,
+    "lon": -99.878
+  }
+]
