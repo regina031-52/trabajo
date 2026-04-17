@@ -1,30 +1,29 @@
 # Refugios A* - PRD
 
 ## Problem Statement
-Aplicación para encontrar la ruta más corta al refugio (escuela) más cercano usando el algoritmo A*. Colonia Renacimiento, Acapulco, Guerrero. Red peatonal real de OpenStreetMap.
+App para encontrar ruta más corta al refugio (escuela) más cercano usando A*. Colonia Renacimiento, Acapulco, Guerrero.
 
 ## Architecture
-- **Backend**: FastAPI + NetworkX + OSMnx
-- **Frontend**: React + Leaflet (react-leaflet) + Tailwind CSS
-- **Database**: MongoDB (available)
-- **Algorithm**: A* pathfinding (custom implementation)
-- **Standalone**: Script Python para compartir con compañeros
+- Backend: FastAPI + NetworkX + OSMnx
+- Frontend: React + Leaflet + Tailwind CSS
+- Standalone: refugios_astar_standalone.py + data/ (4 JSONs)
 
-## What's Been Implemented (Feb 2026)
-- [x] Red peatonal real OSM (1792 nodos, 2355 aristas)
-- [x] 18 escuelas/refugios con unificación doble turno
+## Implemented (Feb 2026)
+- [x] Red peatonal real OSM (1792 nodos, 4766 aristas)
+- [x] 18 escuelas/refugios con doble turno
 - [x] Algoritmo A* personalizado
 - [x] Mapa interactivo Leaflet (CartoDB Dark Matter)
-- [x] Búsqueda por calle con autocompletado (tolerante a acentos)
-- [x] Nombres reales en intersecciones y escuelas
-- [x] **Click en mapa** para seleccionar ubicación
-- [x] **Instrucciones paso a paso** (giros, calles, distancias)
-- [x] **Sugerencias de emergencia** (kit de 15 items)
-- [x] **Script Python standalone** (refugios_astar_standalone.py)
-- [x] Distancia y tiempo estimado caminando
-- [x] Lista ordenada de 18 escuelas por distancia
+- [x] Búsqueda por calle sin prefijo (tolerante a acentos)
+- [x] Click en mapa para seleccionar ubicación
+- [x] Geolocalización GPS del navegador
+- [x] Panel colapsable (ocultar/mostrar)
+- [x] Instrucciones paso a paso con giros
+- [x] Kit de emergencia (15 items)
+- [x] Script Python standalone para compañeros
+- [x] 1790 nodos con nombres de calles reales
+- [x] Etiquetas permanentes de escuelas en mapa
 
-## Prioritized Backlog
-- P1: Geolocalización GPS del navegador
+## Backlog
 - P2: Exportar ruta como imagen/PDF
 - P2: Modo offline (PWA)
+- P3: Compartir ruta por WhatsApp
