@@ -230,7 +230,7 @@ def astar_path(G, origen, destino):
 @api_router.get("/")
 async def root():
     """Endpoint raíz de la API."""
-    return {"message": "API de Refugios A* - Colonia Renacimiento, Acapulco"}
+    return {"message": "API de Refugios A* - Ciudad Renacimiento, Acapulco"}
 
 @api_router.get("/escuelas", response_model=List[Escuela])
 async def get_escuelas():

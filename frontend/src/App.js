@@ -185,7 +185,7 @@ function App() {
   const [resultado, setResultado] = useState(null);
   const [cargando, setCargando] = useState(false);
   const [error, setError] = useState(null);
-  const [mapCenter, setMapCenter] = useState([16.8697, -99.8827]);
+  const [mapCenter, setMapCenter] = useState([16.8971, -99.8199]);
   const [mostrarTodas, setMostrarTodas] = useState(false);
   const [stats, setStats] = useState(null);
   const [buscandoNodo, setBuscandoNodo] = useState(false);
@@ -361,7 +361,7 @@ function App() {
                 <NavigationArrow weight="bold" className="text-[#CCFF00]" />
                 Refugios A*
               </h1>
-              <p className="text-zinc-400 text-xs mt-1">Colonia Renacimiento, Acapulco</p>
+              <p className="text-zinc-400 text-xs mt-1">Ciudad Renacimiento, Acapulco</p>
             </div>
 
             {/* Búsqueda + GPS */}
