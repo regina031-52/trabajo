@@ -59,8 +59,8 @@
     "id": "308075006",
     "lat": 16.8892129,
     "lon": -99.8365803,
-    "tipo": "interseccion",
-    "nombre": "Carretera Federal Acapulco - Chilpancingo"
+    "tipo": "escuela",
+    "nombre": "CETis 116 Antonia Nava de Catalán"
   },
   {
     "id": "308075085",
@@ -430,8 +430,8 @@
     "id": "573419105",
     "lat": 16.8962971,
     "lon": -99.8225143,
-    "tipo": "interseccion",
-    "nombre": "Avenida Juan R. Escudero"
+    "tipo": "escuela",
+    "nombre": "Plantel Adolfo López Mateos / Carlos A. Carrillo"
   },
   {
     "id": "573419110",
@@ -606,7 +606,7 @@
     "lat": 16.886367,
     "lon": -99.809421,
     "tipo": "interseccion",
-    "nombre": "Cerca de 16 de Septiembre"
+    "nombre": "Cerca de Andador Juan Escutia"
   },
   {
     "id": "766839806",
@@ -10042,7 +10042,7 @@
     "lat": 16.9073623,
     "lon": -99.8087413,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Plácido Domingo"
+    "nombre": "Cerca de Calle Reforma"
   },
   {
     "id": "1859083334",
@@ -10819,7 +10819,7 @@
     "lat": 16.9199116,
     "lon": -99.8131891,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Esmeralda"
+    "nombre": "Cerca de Calle Nogales"
   },
   {
     "id": "1859083740",
@@ -10833,7 +10833,7 @@
     "lat": 16.9202166,
     "lon": -99.8134799,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Esmeralda"
+    "nombre": "Cerca de Calle Nogales"
   },
   {
     "id": "1859083745",
@@ -10875,7 +10875,7 @@
     "lat": 16.9205197,
     "lon": -99.8110469,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle 11 de Septiembre"
+    "nombre": "Cerca de Calle del Carmen"
   },
   {
     "id": "1859083762",
@@ -12673,8 +12673,8 @@
     "id": "1859337429",
     "lat": 16.895549,
     "lon": -99.8188272,
-    "tipo": "escuela",
-    "nombre": "Escuela Primaria Adolfo López Mateos (Pedro Ascencio)"
+    "tipo": "interseccion",
+    "nombre": "Andador Ignacio Chávez / Andador Juan García Jiménez"
   },
   {
     "id": "1859337431",
@@ -12771,8 +12771,8 @@
     "id": "1859337466",
     "lat": 16.8970456,
     "lon": -99.8199889,
-    "tipo": "escuela",
-    "nombre": "Plantel Adolfo López Mateos"
+    "tipo": "interseccion",
+    "nombre": "Calle Arroyo / Calle Canal del Arroyo"
   },
   {
     "id": "1859337470",
@@ -14871,8 +14871,8 @@
     "id": "1912819857",
     "lat": 16.870772,
     "lon": -99.814087,
-    "tipo": "escuela",
-    "nombre": "Instituto Emiliano Zapata"
+    "tipo": "interseccion",
+    "nombre": "Calle 1 / Cerrada Perdida"
   },
   {
     "id": "1912819859",
@@ -17363,8 +17363,8 @@
     "id": "1912927275",
     "lat": 16.8856886,
     "lon": -99.824556,
-    "tipo": "interseccion",
-    "nombre": "Andador Yolotla / Calle Río Yolotla"
+    "tipo": "escuela",
+    "nombre": "Plantel Jaime Torres Bodet / Antonio I. Delgado"
   },
   {
     "id": "1912927277",
@@ -17986,8 +17986,8 @@
     "id": "1912927424",
     "lat": 16.888229,
     "lon": -99.8272299,
-    "tipo": "interseccion",
-    "nombre": "Andador Punta Diamante / Calle Farallón"
+    "tipo": "escuela",
+    "nombre": "Jardín de Niños Adolfo López Mateos"
   },
   {
     "id": "1912927429",
@@ -18273,8 +18273,8 @@
     "id": "1912927529",
     "lat": 16.8903045,
     "lon": -99.8254646,
-    "tipo": "interseccion",
-    "nombre": "Calle Valerio Trujano / Laguna Platanar"
+    "tipo": "escuela",
+    "nombre": "Escuela Primaria Gabriela Mistral"
   },
   {
     "id": "1912927530",
@@ -18567,8 +18567,8 @@
     "id": "1912927599",
     "lat": 16.892725,
     "lon": -99.8279356,
-    "tipo": "escuela",
-    "nombre": "Escuela Primaria Urbana Turno Matutino Raúl Isidro Burgos"
+    "tipo": "interseccion",
+    "nombre": "Andador Cerro de la Tentación / Cerro del Zical"
   },
   {
     "id": "1912927600",
@@ -19365,8 +19365,8 @@
     "id": "1912951035",
     "lat": 16.890726,
     "lon": -99.8317015,
-    "tipo": "escuela",
-    "nombre": "Escuela Primaria Urbana Matutina Lázaro Cárdenas"
+    "tipo": "interseccion",
+    "nombre": "Calle Lázaro Cárdenas / Solidaridad"
   },
   {
     "id": "1912951037",
@@ -19904,8 +19904,8 @@
     "id": "1912961255",
     "lat": 16.8904844,
     "lon": -99.8196141,
-    "tipo": "interseccion",
-    "nombre": "Andador Tepozonalco / Calle José María Izazaga"
+    "tipo": "escuela",
+    "nombre": "Escuela Primaria Francisco Sarabia"
   },
   {
     "id": "1912961257",
@@ -19925,8 +19925,8 @@
     "id": "1912961260",
     "lat": 16.8907617,
     "lon": -99.8194405,
-    "tipo": "escuela",
-    "nombre": "Escuela Primaria Turno Matutino Gabriela Mistral"
+    "tipo": "interseccion",
+    "nombre": "Andador Tepozonalco / Calle San Rafaél"
   },
   {
     "id": "1912961263",
@@ -20219,8 +20219,8 @@
     "id": "1912974012",
     "lat": 16.8959089,
     "lon": -99.8156056,
-    "tipo": "escuela",
-    "nombre": "Escuela Primaria Matutina Ignacio M. Altamirano"
+    "tipo": "interseccion",
+    "nombre": "Calle Leonardo Bravo / Calle Paseo de la Sabana"
   },
   {
     "id": "1912974013",
@@ -20646,8 +20646,8 @@
     "id": "1912974207",
     "lat": 16.8977256,
     "lon": -99.8216923,
-    "tipo": "escuela",
-    "nombre": "Primaria 7"
+    "tipo": "interseccion",
+    "nombre": "Calle La Bocana / Calle Playa La Bocana"
   },
   {
     "id": "1912974209",
@@ -20821,8 +20821,8 @@
     "id": "1912974296",
     "lat": 16.8983395,
     "lon": -99.817458,
-    "tipo": "escuela",
-    "nombre": "Primaria Benemérito de las Américas"
+    "tipo": "interseccion",
+    "nombre": "Calle Julián Blanco / Circuito Interior Renacimiento"
   },
   {
     "id": "1912974311",
@@ -21340,7 +21340,7 @@
     "lat": 16.8895273,
     "lon": -99.8341477,
     "tipo": "escuela",
-    "nombre": "CETis 116 Antonia Nava de Catalán"
+    "nombre": "Secundaria Técnica 68 Renacimiento"
   },
   {
     "id": "1912981526",
@@ -21388,8 +21388,8 @@
     "id": "1912981539",
     "lat": 16.8906083,
     "lon": -99.8338783,
-    "tipo": "interseccion",
-    "nombre": "Andador Chapultepec / Calle Ejido Xoyatepec"
+    "tipo": "escuela",
+    "nombre": "Escuela Primaria Lázaro Cárdenas"
   },
   {
     "id": "1912981543",
@@ -21949,7 +21949,7 @@
     "lat": 16.8881645,
     "lon": -99.8106977,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle 16 de Septiembre"
+    "nombre": "Cerca de Calle Las Margaritas"
   },
   {
     "id": "1912988385",
@@ -22061,7 +22061,7 @@
     "lat": 16.8889949,
     "lon": -99.810558,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle 16 de Septiembre"
+    "nombre": "Cerca de Calle Las Margaritas"
   },
   {
     "id": "1912988446",
@@ -22096,7 +22096,7 @@
     "lat": 16.889116,
     "lon": -99.8119165,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Las Rosas"
+    "nombre": "Cerca de Calle Benito Juárez"
   },
   {
     "id": "1912988453",
@@ -22264,7 +22264,7 @@
     "lat": 16.8908393,
     "lon": -99.8126585,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Fragancia"
+    "nombre": "Cerca de Calle Girasol"
   },
   {
     "id": "1912988527",
@@ -22285,7 +22285,7 @@
     "lat": 16.892005,
     "lon": -99.8095581,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Nicolás Bravo"
+    "nombre": "Cerca de Calle Josefa Ortiz de Domínguez"
   },
   {
     "id": "1912988555",
@@ -22789,7 +22789,7 @@
     "lat": 16.8977047,
     "lon": -99.804319,
     "tipo": "interseccion",
-    "nombre": "Cerca de Nueva Revolución"
+    "nombre": "Cerca de Julián Olea Nava"
   },
   {
     "id": "1912999177",
@@ -22845,7 +22845,7 @@
     "lat": 16.8979581,
     "lon": -99.8041986,
     "tipo": "interseccion",
-    "nombre": "Cerca de Nueva Revolución"
+    "nombre": "Cerca de Julián Olea Nava"
   },
   {
     "id": "1912999210",
@@ -22915,7 +22915,7 @@
     "lat": 16.8981527,
     "lon": -99.8055417,
     "tipo": "interseccion",
-    "nombre": "Cerca de Revolución"
+    "nombre": "Cerca de Nueva Revolución"
   },
   {
     "id": "1912999236",
@@ -22985,7 +22985,7 @@
     "lat": 16.8984444,
     "lon": -99.8058069,
     "tipo": "interseccion",
-    "nombre": "Cerca de Revolución"
+    "nombre": "Cerca de Ayacahuite"
   },
   {
     "id": "1912999259",
@@ -24021,7 +24021,7 @@
     "lat": 16.9219662,
     "lon": -99.809042,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle 7 de Abril"
+    "nombre": "Cerca de Calle del Plan"
   },
   {
     "id": "1913051609",
@@ -24462,7 +24462,7 @@
     "lat": 16.9170907,
     "lon": -99.8193907,
     "tipo": "interseccion",
-    "nombre": "Cerca de Carretera Federal Acapulco - Chilpancingo"
+    "nombre": "Cerca de Calle Lázaro Cárdenas"
   },
   {
     "id": "1913249695",
@@ -24910,7 +24910,7 @@
     "lat": 16.9229211,
     "lon": -99.8237991,
     "tipo": "interseccion",
-    "nombre": "Cerca de Hermenegildo galeana"
+    "nombre": "Cerca de Calle Gardenias"
   },
   {
     "id": "1913250062",
@@ -25540,7 +25540,7 @@
     "lat": 16.9179203,
     "lon": -99.834499,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Francisco I. Madero"
+    "nombre": "Cerca de Calle Venus"
   },
   {
     "id": "1913267313",
@@ -25561,7 +25561,7 @@
     "lat": 16.9194069,
     "lon": -99.8344602,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Francisco I. Madero"
+    "nombre": "Cerca de Andador 5 de Mayo"
   },
   {
     "id": "1913267337",
@@ -25750,14 +25750,14 @@
     "lat": 16.8968532,
     "lon": -99.8473517,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Veladero"
+    "nombre": "Cerca de Calle 9"
   },
   {
     "id": "1913286968",
     "lat": 16.8968626,
     "lon": -99.8472479,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Veladero"
+    "nombre": "Cerca de Calle 9"
   },
   {
     "id": "1913286969",
@@ -27745,7 +27745,7 @@
     "lat": 16.8918071,
     "lon": -99.8124835,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Dalia"
+    "nombre": "Cerca de Calle Bugambilia"
   },
   {
     "id": "2308344429",
@@ -27982,8 +27982,8 @@
     "id": "3161812902",
     "lat": 16.8970634,
     "lon": -99.8218398,
-    "tipo": "interseccion",
-    "nombre": "Andador Acayatl / Avenida Juan R. Escudero"
+    "tipo": "escuela",
+    "nombre": "Jardín de Niños Moisés Guevara"
   },
   {
     "id": "3161812906",
@@ -30824,8 +30824,8 @@
     "id": "5952025778",
     "lat": 16.8883857,
     "lon": -99.8281123,
-    "tipo": "interseccion",
-    "nombre": "Calle Olímpica"
+    "tipo": "escuela",
+    "nombre": "Secundaria General N. 49 Margarito Damián Vargas"
   },
   {
     "id": "5952036697",
@@ -30957,8 +30957,8 @@
     "id": "5952085196",
     "lat": 16.8900609,
     "lon": -99.8346371,
-    "tipo": "interseccion",
-    "nombre": "Calle Alta Quebrada / Calle Ejido Las Playas"
+    "tipo": "escuela",
+    "nombre": "CETis 90 Julián Blanco Jiménez"
   },
   {
     "id": "5952089437",
@@ -31062,8 +31062,8 @@
     "id": "5952186997",
     "lat": 16.892535,
     "lon": -99.8225761,
-    "tipo": "escuela",
-    "nombre": "Escuela Primaria Rural Federal Jaime Nunó"
+    "tipo": "interseccion",
+    "nombre": "Calle Joaquín Velázquez de León / Calle Otzumba"
   },
   {
     "id": "5952186998",
@@ -31924,7 +31924,7 @@
     "lat": 16.9004331,
     "lon": -99.8235868,
     "tipo": "escuela",
-    "nombre": "Esc. Prim. Urb. Mat. Francisco Pérez Ríos"
+    "nombre": "Esc. Prim. Francisco Pérez Ríos"
   },
   {
     "id": "8017183796",
@@ -32287,8 +32287,8 @@
     "id": "8022350593",
     "lat": 16.8966499,
     "lon": -99.8157976,
-    "tipo": "interseccion",
-    "nombre": "Calle Leonardo Bravo / Calle Victoria"
+    "tipo": "escuela",
+    "nombre": "Primaria Benemérito de las Américas"
   },
   {
     "id": "8022350594",
@@ -33002,7 +33002,7 @@
     "lat": 16.8922409,
     "lon": -99.8284488,
     "tipo": "escuela",
-    "nombre": "Escuela Prim. Raúl Isidro Burgos"
+    "nombre": "Escuela Primaria Prof. Raúl Isidro Burgos"
   },
   {
     "id": "8064291706",
@@ -33169,8 +33169,8 @@
     "id": "8079690731",
     "lat": 16.8933172,
     "lon": -99.8211428,
-    "tipo": "escuela",
-    "nombre": "Escuela Primaria Francisco Sarabia"
+    "tipo": "interseccion",
+    "nombre": "Calle Rubén Mora"
   },
   {
     "id": "8079690732",
@@ -33338,7 +33338,7 @@
     "lat": 16.8910288,
     "lon": -99.8136375,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Hortencia"
+    "nombre": "Cerca de Calle Girasol"
   },
   {
     "id": "8079949066",
@@ -33429,14 +33429,14 @@
     "lat": 16.8916737,
     "lon": -99.8134483,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Dalia"
+    "nombre": "Cerca de Calle Espiga"
   },
   {
     "id": "8079949082",
     "lat": 16.8914975,
     "lon": -99.8125334,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Dalia"
+    "nombre": "Cerca de Calle Fragancia"
   },
   {
     "id": "8079949083",
@@ -33632,7 +33632,7 @@
     "lat": 16.8919365,
     "lon": -99.8091563,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Nicolás Bravo"
+    "nombre": "Cerca de Calle Josefa Ortiz de Domínguez"
   },
   {
     "id": "8079967420",
@@ -35010,8 +35010,8 @@
     "id": "8082914861",
     "lat": 16.8931273,
     "lon": -99.8103578,
-    "tipo": "escuela",
-    "nombre": "Jardín de Niños Manuel Acuña"
+    "tipo": "interseccion",
+    "nombre": "Cerca de Calle Nicolás Bravo"
   },
   {
     "id": "8082914865",
@@ -35598,8 +35598,8 @@
     "id": "8086491690",
     "lat": 16.9002832,
     "lon": -99.8130441,
-    "tipo": "interseccion",
-    "nombre": "Calle Delta"
+    "tipo": "escuela",
+    "nombre": "Primaria Ignacio M. Altamirano / Estefanía Castañeda"
   },
   {
     "id": "8086491691",
@@ -35928,14 +35928,14 @@
     "lat": 16.9149283,
     "lon": -99.8015667,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Feliciano Martínez"
+    "nombre": "Cerca de Calle Juan R. Escudero"
   },
   {
     "id": "8086682408",
     "lat": 16.9143272,
     "lon": -99.8015428,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Feliciano Martínez"
+    "nombre": "Cerca de Calle Juan R. Escudero"
   },
   {
     "id": "8086682412",
@@ -36095,8 +36095,8 @@
     "id": "8086691974",
     "lat": 16.9066683,
     "lon": -99.8135028,
-    "tipo": "interseccion",
-    "nombre": "Andador del Ruedo / Calle Jacarandas"
+    "tipo": "escuela",
+    "nombre": "Jardín de Niños Manuel Acuña"
   },
   {
     "id": "8086691975",
@@ -36215,7 +36215,7 @@
     "lat": 16.9041161,
     "lon": -99.8137119,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Principal Popular"
+    "nombre": "Cerca de Calle Plan de Ayutla"
   },
   {
     "id": "8086692003",
@@ -36628,14 +36628,14 @@
     "lat": 16.920352,
     "lon": -99.8097286,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle 11 de Septiembre"
+    "nombre": "Cerca de Calle del Carmen"
   },
   {
     "id": "8098969714",
     "lat": 16.9200572,
     "lon": -99.8095416,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle 11 de Septiembre"
+    "nombre": "Cerca de Calle del Carmen"
   },
   {
     "id": "8098969715",
@@ -36796,7 +36796,7 @@
     "lat": 16.9153998,
     "lon": -99.8065947,
     "tipo": "interseccion",
-    "nombre": "Cerca de Las Marías"
+    "nombre": "Cerca de A Pochote"
   },
   {
     "id": "8099011877",
@@ -37440,7 +37440,7 @@
     "lat": 16.926341,
     "lon": -99.8299651,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Las Torres"
+    "nombre": "Cerca de Calle Las Albercas"
   },
   {
     "id": "8104312726",
@@ -37713,7 +37713,7 @@
     "lat": 16.9222199,
     "lon": -99.8405776,
     "tipo": "interseccion",
-    "nombre": "Cerca de Andador Miguel López Sotelo"
+    "nombre": "Cerca de Calle Salvador Martínez Salgado"
   },
   {
     "id": "8104488710",
@@ -37811,21 +37811,21 @@
     "lat": 16.9220333,
     "lon": -99.834031,
     "tipo": "interseccion",
-    "nombre": "Cerca de Privada Jacarandas"
+    "nombre": "Cerca de Calle Tulipán"
   },
   {
     "id": "8104632867",
     "lat": 16.9215717,
     "lon": -99.8336767,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Jacarandas"
+    "nombre": "Cerca de Calle Tulipán"
   },
   {
     "id": "8104632868",
     "lat": 16.9217138,
     "lon": -99.8341517,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Jacarandas"
+    "nombre": "Cerca de Calle Tulipán"
   },
   {
     "id": "8104649310",
@@ -37881,7 +37881,7 @@
     "lat": 16.9223854,
     "lon": -99.8318383,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Mar de Salomón"
+    "nombre": "Cerca de Calle Primero de Mayo"
   },
   {
     "id": "8104733060",
@@ -38336,14 +38336,14 @@
     "lat": 16.922091,
     "lon": -99.8342325,
     "tipo": "interseccion",
-    "nombre": "Cerca de Privada Jacarandas"
+    "nombre": "Cerca de Calle Tulipán"
   },
   {
     "id": "8105015760",
     "lat": 16.9218841,
     "lon": -99.8335345,
     "tipo": "interseccion",
-    "nombre": "Cerca de Privada Jacarandas"
+    "nombre": "Cerca de Calle Tulipán"
   },
   {
     "id": "8105015770",
@@ -43411,7 +43411,7 @@
     "lat": 16.9190977,
     "lon": -99.8238064,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Benito Juárez"
+    "nombre": "Cerca de Calle Francisco Villa"
   },
   {
     "id": "8127029981",
@@ -43984,8 +43984,8 @@
     "id": "8130628266",
     "lat": 16.8955992,
     "lon": -99.823936,
-    "tipo": "interseccion",
-    "nombre": "Andador Los Mangos / Calle Los Mangos"
+    "tipo": "escuela",
+    "nombre": "Desarrollo Infantil y Juvenil Renacimiento A.C."
   },
   {
     "id": "8130808958",
@@ -45608,8 +45608,8 @@
     "id": "8155368906",
     "lat": 16.8913801,
     "lon": -99.8166149,
-    "tipo": "escuela",
-    "nombre": "Escuela Primaria Vespertino Antonio I. Delgado"
+    "tipo": "interseccion",
+    "nombre": "Calle Iris"
   },
   {
     "id": "8155368907",
@@ -45721,7 +45721,7 @@
     "lat": 16.890696,
     "lon": -99.813666,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Iris"
+    "nombre": "Cerca de Calle Hortencia"
   },
   {
     "id": "8155639774",
@@ -47856,7 +47856,7 @@
     "lat": 16.9126731,
     "lon": -99.8483898,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Benito Juárez"
+    "nombre": "Cerca de Calle Magnolia"
   },
   {
     "id": "8165375318",
@@ -47870,7 +47870,7 @@
     "lat": 16.9127433,
     "lon": -99.8484456,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Benito Juárez"
+    "nombre": "Cerca de Calle Magnolia"
   },
   {
     "id": "8165375322",
@@ -47961,14 +47961,14 @@
     "lat": 16.9115134,
     "lon": -99.8494275,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Insurgentes"
+    "nombre": "Cerca de Calle Magnolia"
   },
   {
     "id": "8165402004",
     "lat": 16.9117884,
     "lon": -99.8497053,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Insurgentes"
+    "nombre": "Cerca de Calle Magnolia"
   },
   {
     "id": "8165413906",
@@ -51265,7 +51265,7 @@
     "lat": 16.8985324,
     "lon": -99.8465946,
     "tipo": "interseccion",
-    "nombre": "Cerca de Emiliano Zapata"
+    "nombre": "Cerca de Calle Tuxtla Gutiérrez"
   },
   {
     "id": "8184466900",
@@ -52063,7 +52063,7 @@
     "lat": 16.8947492,
     "lon": -99.8477986,
     "tipo": "interseccion",
-    "nombre": "Cerca de Andador Providencia"
+    "nombre": "Cerca de Calle Alta Tensión"
   },
   {
     "id": "8184850532",
@@ -52112,7 +52112,7 @@
     "lat": 16.9001896,
     "lon": -99.8051011,
     "tipo": "interseccion",
-    "nombre": "Cerca de Laurel"
+    "nombre": "Cerca de Julián Olea Nava"
   },
   {
     "id": "8184918272",
@@ -53939,14 +53939,14 @@
     "lat": 16.8954121,
     "lon": -99.8512905,
     "tipo": "interseccion",
-    "nombre": "Cerca de Andador Guadalupe Victoria"
+    "nombre": "Cerca de Calle Leona Vicario"
   },
   {
     "id": "8188149068",
     "lat": 16.8949683,
     "lon": -99.8515458,
     "tipo": "interseccion",
-    "nombre": "Cerca de Andador Guadalupe Victoria"
+    "nombre": "Cerca de Calle Leona Vicario"
   },
   {
     "id": "8188149069",
@@ -55353,7 +55353,7 @@
     "lat": 16.9229609,
     "lon": -99.8400727,
     "tipo": "interseccion",
-    "nombre": "Cerca de Andador Miguel López Sotelo"
+    "nombre": "Cerca de Calle Salvador Martínez Salgado"
   },
   {
     "id": "8577606836",
@@ -55374,7 +55374,7 @@
     "lat": 16.9199474,
     "lon": -99.842872,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Froylan"
+    "nombre": "Cerca de Andador Atenas"
   },
   {
     "id": "8577632465",
@@ -55983,7 +55983,7 @@
     "lat": 16.905371,
     "lon": -99.8137281,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Principal Popular"
+    "nombre": "Cerca de Calle Plan de Ayutla"
   },
   {
     "id": "8597695400",
@@ -56641,7 +56641,7 @@
     "lat": 16.8894913,
     "lon": -99.8150868,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle Siete"
+    "nombre": "Cerca de Calle Benito Juárez"
   },
   {
     "id": "8601670611",
@@ -56977,7 +56977,7 @@
     "lat": 16.8917885,
     "lon": -99.8346095,
     "tipo": "interseccion",
-    "nombre": "Cerca de Solidaridad"
+    "nombre": "Cerca de Ejido Las Pozas"
   },
   {
     "id": "8606159864",
@@ -58769,7 +58769,7 @@
     "lat": 16.8861482,
     "lon": -99.808,
     "tipo": "interseccion",
-    "nombre": "Cerca de 16 de Septiembre"
+    "nombre": "Cerca de Andador Juan Escutia"
   },
   {
     "id": "11348846614",
@@ -58937,7 +58937,7 @@
     "lat": 16.9193856,
     "lon": -99.8098409,
     "tipo": "interseccion",
-    "nombre": "Cerca de Calle del Carmen"
+    "nombre": "Cerca de Calle 11 de Septiembre"
   },
   {
     "id": "11401440175",
@@ -58958,21 +58958,21 @@
     "lat": 16.9234611,
     "lon": -99.8214271,
     "tipo": "interseccion",
-    "nombre": "Cerca de Hermenegildo galeana"
+    "nombre": "Cerca de Calle Gardenias"
   },
   {
     "id": "11527988769",
     "lat": 16.9231007,
     "lon": -99.8214971,
     "tipo": "interseccion",
-    "nombre": "Cerca de Hermenegildo galeana"
+    "nombre": "Cerca de Calle Gardenias"
   },
   {
     "id": "11527988796",
     "lat": 16.9231816,
     "lon": -99.8195954,
     "tipo": "interseccion",
-    "nombre": "Cerca de Hermenegildo galeana"
+    "nombre": "Cerca de Calle Gardenias"
   },
   {
     "id": "11528854797",
@@ -59882,7 +59882,7 @@
     "lat": 16.8973089,
     "lon": -99.830957,
     "tipo": "interseccion",
-    "nombre": "Cerca de Circuito Interior"
+    "nombre": "Cerca de Vicente Guerrero"
   },
   {
     "id": "12546088037",
