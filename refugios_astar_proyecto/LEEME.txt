@@ -1,52 +1,23 @@
 ================================================================
   REFUGIOS A* - Ciudad Renacimiento, Acapulco (CP 39715)
-  Encuentra el refugio mas cercano usando el algoritmo A*
 ================================================================
 
 REQUISITOS:
-  - Python 3.8 o superior (descargar de https://www.python.org)
-  - Al instalar Python, MARCAR la casilla "Add Python to PATH"
+  - Python 3.8+ (https://www.python.org, marcar "Add to PATH")
 
-INSTALACION (una sola vez, abrir CMD o Terminal):
-  pip install networkx matplotlib
+INSTALAR (abrir CMD/Terminal, una sola vez):
+  pip install flask networkx
 
 EJECUTAR:
-  1. Descomprimir esta carpeta
-  2. Abrir CMD o Terminal
-  3. Navegar a la carpeta:  cd refugios_astar_proyecto
-  4. Ejecutar:  python refugios_astar_standalone.py
+  python app.py
+
+ABRIR EN NAVEGADOR:
+  http://localhost:5000
 
 ARCHIVOS:
-  refugios_astar_standalone.py  -> Script principal (codigo Python)
+  app.py                        -> App Flask completa (servidor + mapa + A*)
+  refugios_astar_standalone.py  -> Version terminal (sin navegador)
   data/escuelas.json            -> 19 refugios verificados
-  data/nodos_calles.json        -> 8558 nodos de calles reales (OSM)
-  data/aristas_calles.json      -> 23332 aristas (conexiones entre calles)
-
-QUE HACE:
-  1. Te pide escribir el nombre de tu calle
-  2. Calcula con A* la ruta mas corta a los 19 refugios
-  3. Muestra el refugio mas cercano con instrucciones paso a paso
-  4. Lista todos los refugios ordenados por distancia
-  5. Muestra kit de emergencia
-  6. Genera imagen "ruta_refugio.png" con el mapa de la ruta
-
-19 REFUGIOS:
-  R01  Primaria Benemerito de las Americas
-  R02  Primaria Ignacio M. Altamirano / Estefania Castaneda
-  R03  Plantel Adolfo Lopez Mateos / Carlos A. Carrillo
-  R04  Jardin de Ninos Moises Guevara
-  R05  Escuela Primaria Prof. Raul Isidro Burgos
-  R06  Plantel Jaime Torres Bodet / Antonio I. Delgado
-  R07  Escuela Primaria Gabriela Mistral
-  R08  Escuela Primaria Lazaro Cardenas
-  R09  Escuela Primaria Francisco Sarabia
-  R10  CETis 90 Julian Blanco Jimenez
-  R11  CETis 116 Antonia Nava de Catalan
-  R12  Secundaria General N. 49 Margarito Damian Vargas
-  R13  Desarrollo Infantil y Juvenil Renacimiento A.C.
-  R14  Secundaria Tecnica 68 Renacimiento
-  R15  Jardin de Ninos Adolfo Lopez Mateos
-  R16  Jardin de Ninos Manuel Acuna
-  R17  Jardin de Ninos Luis Hidalgo Monroy
-  R18  Esc. Prim. Francisco Perez Rios
-  R19  Secundaria Federal No. 9 Alfonso Ramirez Altamirano
+  data/nodos_calles.json        -> 8,558 nodos de calles
+  data/aristas_calles.json      -> 23,332 conexiones entre calles
+  LEEME.txt                     -> Este archivo
