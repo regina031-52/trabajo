@@ -1,0 +1,60 @@
+================================================================
+  REFUGIOS A* (JAVA) - Ciudad Renacimiento, Acapulco (CP 39715)
+================================================================
+
+REQUISITOS:
+  - Java 17+ (https://adoptium.net o https://www.oracle.com/java/)
+  - Maven (https://maven.apache.org/download.cgi)
+  
+  Verificar instalación:
+    java -version
+    mvn -version
+
+================================================================
+  OPCIÓN 1: VERSIÓN WEB (mapa interactivo en navegador)
+================================================================
+
+  Compilar y ejecutar:
+    cd refugios-astar-java
+    mvn compile exec:java -Dexec.mainClass="refugios.App"
+
+  Abrir en navegador:
+    http://localhost:5000
+
+================================================================
+  OPCIÓN 2: VERSIÓN CONSOLA (terminal)
+================================================================
+
+  Compilar y ejecutar:
+    cd refugios-astar-java
+    mvn compile exec:java -Dexec.mainClass="refugios.ConsoleApp"
+
+================================================================
+  ALTERNATIVA SIN MAVEN (compilar manual)
+================================================================
+
+  1. Descargar gson-2.10.1.jar de:
+     https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar
+
+  2. Compilar:
+     javac -cp gson-2.10.1.jar -d out src/main/java/refugios/*.java
+
+  3. Ejecutar web:
+     java -cp out:gson-2.10.1.jar refugios.App
+
+  4. Ejecutar consola:
+     java -cp out:gson-2.10.1.jar refugios.ConsoleApp
+
+  (En Windows usar ; en vez de : para el classpath)
+
+================================================================
+  ARCHIVOS
+================================================================
+  pom.xml                                -> Configuración Maven
+  src/main/java/refugios/App.java        -> Servidor web + mapa
+  src/main/java/refugios/ConsoleApp.java -> Versión terminal
+  src/main/java/refugios/Grafo.java      -> Grafo + Algoritmo A*
+  src/main/java/refugios/Datos.java      -> Carga de datos JSON
+  data/escuelas.json                     -> 19 refugios
+  data/nodos_calles.json                 -> 8,558 nodos
+  data/aristas_calles.json               -> 23,332 aristas
