@@ -206,13 +206,25 @@
   {
     "id": "R18",
     "nombre": "Esc. Prim. Francisco Pérez Ríos",
-    "alias": "Ubicación a revisar",
+    "alias": "",
     "tipo": "primaria",
     "unificada": false,
     "nodo_id": "8017183795",
-    "lat": 16.90048029,
-    "lon": -99.82373754,
-    "direccion": "Calle Las Cruces s/n, Col. Renacimiento / Electricistas, CP 39715",
-    "estatus": "revisar"
+    "lat": 16.9005,
+    "lon": -99.8237,
+    "direccion": "De Las Cruces s/n, Electricistas, CP 39715",
+    "estatus": "dentro"
+  },
+  {
+    "id": "R19",
+    "nombre": "Secundaria Federal No. 9 Alfonso Ramírez Altamirano",
+    "alias": "",
+    "tipo": "secundaria",
+    "unificada": false,
+    "lat": 16.894412,
+    "lon": -99.818954,
+    "direccion": "Cto. Interior Renacimiento 11, Cd Renacimiento, CP 39715",
+    "estatus": "dentro",
+    "nodo_id": "8584999728"
   }
 ]

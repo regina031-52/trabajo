@@ -51,6 +51,8 @@ class Escuela(BaseModel):
     nodo_id: str
     lat: float
     lon: float
+    direccion: str = ""
+    estatus: str = ""
 
 class Nodo(BaseModel):
     id: str
