@@ -9,6 +9,8 @@ La implementacion esta pensada para una estudiante de matematicas con
 conocimientos basicos de programacion: usa archivos CSV, pandas, tkinter y una
 Busqueda Tabu escrita de forma directa y comentada.
 
+La aplicacion abre por defecto una **interfaz facil** con menu lateral, botones grandes y menos campos visibles. Tambien se conserva una interfaz mas completa para revisar varias tablas al mismo tiempo.
+
 ## 1. Como ejecutar
 
 ```bash
@@ -16,6 +18,14 @@ pip install -r requirements.txt
 python src/main.py
 # En Linux tambien puede ser:
 python3 src/main.py
+```
+
+Para abrir la interfaz avanzada anterior:
+
+```bash
+python src/gui.py
+# En Linux tambien puede ser:
+python3 src/gui.py
 ```
 
 Si la computadora no tiene entorno grafico, se puede probar solo la
@@ -45,7 +55,8 @@ src/
   analytics.py       Ventas mensuales, rotacion, utilidad y necesidad
   tabu_search.py     Metaheuristica Busqueda Tabu
   reporting.py       Graficos de evolucion, presupuesto y utilidad
-  gui.py             Interfaz grafica con tkinter
+  simple_gui.py      Interfaz facil y visual para uso diario
+  gui.py             Interfaz avanzada con mas tablas al mismo tiempo
   main.py            Punto de entrada
 ```
 
@@ -237,6 +248,20 @@ La ventana tiene cuatro pestañas:
    - Evolucion de la mejor solucion.
    - Presupuesto utilizado.
    - Utilidad esperada por producto.
+
+## 8. Recomendacion para presentar la app
+
+Para una demostracion universitaria se recomienda usar `python3 src/main.py`,
+porque abre la version facil:
+
+- Menu lateral con las acciones principales.
+- Panel inicial con resumen del negocio.
+- Formularios mas cortos y guiados.
+- Boton directo para ejecutar la Busqueda Tabu.
+- Tabla de pedido sugerido y graficas en la misma pantalla.
+
+La interfaz avanzada queda en `src/gui.py` como respaldo si se quiere ver mas
+informacion tecnica.
 
 ## 8. Ideas para ampliar el proyecto
 

@@ -557,3 +557,6 @@ def run_app() -> None:
     app = InventoryApp()
     app.mainloop()
 
+
+if __name__ == "__main__":
+    run_app()
