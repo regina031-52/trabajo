@@ -1,0 +1,9 @@
+producto_id,nombre,categoria,piezas_por_caja,costo_pieza,precio_venta_pieza,inventario_actual,inventario_minimo,stock_objetivo,cajas_maximas,activo
+P001,Tinte rubio 8.1,Tintes,12,45.00,82.00,18,8,30,8,1
+P002,Tinte castano 5.0,Tintes,12,42.00,78.00,9,8,28,8,1
+P003,Tratamiento keratina,Tratamientos,6,110.00,190.00,7,4,14,5,1
+P004,Shampoo hidratante 1L,Shampoos,12,58.00,105.00,20,10,36,10,1
+P005,Spray fijador profesional,Sprays,24,28.00,55.00,8,12,40,6,1
+P006,Gel extra firme,Geles,24,18.00,38.00,35,15,45,5,1
+P007,Mascarilla nutritiva,Tratamientos,6,95.00,165.00,4,5,18,6,1
+P008,Peroxido 20 vol,Quimicos,12,24.00,48.00,16,8,32,7,1

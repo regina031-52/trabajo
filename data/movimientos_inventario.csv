@@ -1,0 +1,9 @@
+movimiento_id,fecha,producto_id,tipo,cantidad,existencia_final,nota
+M0001,2026-05-30,P001,conteo_inicial,18,18,Inventario inicial de ejemplo
+M0002,2026-05-30,P002,conteo_inicial,9,9,Inventario inicial de ejemplo
+M0003,2026-05-30,P003,conteo_inicial,7,7,Inventario inicial de ejemplo
+M0004,2026-05-30,P004,conteo_inicial,20,20,Inventario inicial de ejemplo
+M0005,2026-05-30,P005,conteo_inicial,8,8,Inventario inicial de ejemplo
+M0006,2026-05-30,P006,conteo_inicial,35,35,Inventario inicial de ejemplo
+M0007,2026-05-30,P007,conteo_inicial,4,4,Inventario inicial de ejemplo
+M0008,2026-05-30,P008,conteo_inicial,16,16,Inventario inicial de ejemplo
